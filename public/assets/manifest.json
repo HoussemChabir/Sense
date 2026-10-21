@@ -1,0 +1,450 @@
+[
+  {
+    "name": "artisan",
+    "file": "artisan-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "artisan",
+    "file": "artisan-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "artisan",
+    "file": "artisan-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "coastal-stay",
+    "file": "coastal-stay-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "coastal-stay",
+    "file": "coastal-stay-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "coastal-stay",
+    "file": "coastal-stay-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "courtyard-stay",
+    "file": "courtyard-stay-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "courtyard-stay",
+    "file": "courtyard-stay-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "courtyard-stay",
+    "file": "courtyard-stay-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "culinary",
+    "file": "culinary-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "culinary",
+    "file": "culinary-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "culinary",
+    "file": "culinary-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "desert-room",
+    "file": "desert-room-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "desert-room",
+    "file": "desert-room-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "desert-room",
+    "file": "desert-room-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "el-jem",
+    "file": "el-jem-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "el-jem",
+    "file": "el-jem-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "el-jem",
+    "file": "el-jem-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "exp-adventure",
+    "file": "exp-adventure-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1585,
+    "originalHeight": 792
+  },
+  {
+    "name": "exp-adventure",
+    "file": "exp-adventure-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1585,
+    "originalHeight": 792
+  },
+  {
+    "name": "exp-adventure",
+    "file": "exp-adventure-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1585,
+    "originalHeight": 792
+  },
+  {
+    "name": "exp-ancient-worlds",
+    "file": "exp-ancient-worlds-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1600,
+    "originalHeight": 1200
+  },
+  {
+    "name": "exp-ancient-worlds",
+    "file": "exp-ancient-worlds-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1600,
+    "originalHeight": 1200
+  },
+  {
+    "name": "exp-ancient-worlds",
+    "file": "exp-ancient-worlds-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1600,
+    "originalHeight": 1200
+  },
+  {
+    "name": "exp-culinary",
+    "file": "exp-culinary-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "exp-culinary",
+    "file": "exp-culinary-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "exp-culinary",
+    "file": "exp-culinary-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "exp-culture",
+    "file": "exp-culture-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 940,
+    "originalHeight": 788
+  },
+  {
+    "name": "exp-culture",
+    "file": "exp-culture-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 940,
+    "originalHeight": 788
+  },
+  {
+    "name": "exp-culture",
+    "file": "exp-culture-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 940,
+    "originalHeight": 788
+  },
+  {
+    "name": "exp-family",
+    "file": "exp-family-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1448,
+    "originalHeight": 1086
+  },
+  {
+    "name": "exp-family",
+    "file": "exp-family-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1448,
+    "originalHeight": 1086
+  },
+  {
+    "name": "exp-family",
+    "file": "exp-family-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1448,
+    "originalHeight": 1086
+  },
+  {
+    "name": "exp-go-local",
+    "file": "exp-go-local-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1024,
+    "originalHeight": 626
+  },
+  {
+    "name": "exp-go-local",
+    "file": "exp-go-local-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1024,
+    "originalHeight": 626
+  },
+  {
+    "name": "exp-go-local",
+    "file": "exp-go-local-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1024,
+    "originalHeight": 626
+  },
+  {
+    "name": "exp-off-the-beaten-path",
+    "file": "exp-off-the-beaten-path-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 2288,
+    "originalHeight": 1712
+  },
+  {
+    "name": "exp-off-the-beaten-path",
+    "file": "exp-off-the-beaten-path-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 2288,
+    "originalHeight": 1712
+  },
+  {
+    "name": "exp-off-the-beaten-path",
+    "file": "exp-off-the-beaten-path-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 2288,
+    "originalHeight": 1712
+  },
+  {
+    "name": "family-desert",
+    "file": "family-desert-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "family-desert",
+    "file": "family-desert-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "family-desert",
+    "file": "family-desert-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "hero-desktop",
+    "file": "hero-desktop-800.webp",
+    "requestedWidth": 800,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "hero-desktop",
+    "file": "hero-desktop-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "hero-mobile",
+    "file": "hero-mobile-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1024,
+    "originalHeight": 1536
+  },
+  {
+    "name": "hero-mobile",
+    "file": "hero-mobile-800.webp",
+    "requestedWidth": 800,
+    "originalWidth": 1024,
+    "originalHeight": 1536
+  },
+  {
+    "name": "matmata",
+    "file": "matmata-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "matmata",
+    "file": "matmata-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "matmata",
+    "file": "matmata-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "oasis-panorama",
+    "file": "oasis-panorama-800.webp",
+    "requestedWidth": 800,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "oasis-panorama",
+    "file": "oasis-panorama-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "sahara-camp",
+    "file": "sahara-camp-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "sahara-camp",
+    "file": "sahara-camp-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "sahara-camp",
+    "file": "sahara-camp-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "sidi-bou-said",
+    "file": "sidi-bou-said-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "sidi-bou-said",
+    "file": "sidi-bou-said-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "sidi-bou-said",
+    "file": "sidi-bou-said-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1536,
+    "originalHeight": 1024
+  },
+  {
+    "name": "watercolor-edge",
+    "file": "watercolor-edge-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 2172,
+    "originalHeight": 724
+  },
+  {
+    "name": "watercolor-edge",
+    "file": "watercolor-edge-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 2172,
+    "originalHeight": 724
+  },
+  {
+    "name": "watercolor-edge",
+    "file": "watercolor-edge-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 2172,
+    "originalHeight": 724
+  },
+  {
+    "name": "beach-interlude-desktop",
+    "file": "beach-interlude-desktop-800.webp",
+    "requestedWidth": 800,
+    "originalWidth": 5616,
+    "originalHeight": 3744
+  },
+  {
+    "name": "beach-interlude-desktop",
+    "file": "beach-interlude-desktop-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 5616,
+    "originalHeight": 3744
+  },
+  {
+    "name": "beach-interlude-mobile",
+    "file": "beach-interlude-mobile-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 687,
+    "originalHeight": 1031
+  },
+  {
+    "name": "beach-interlude-mobile",
+    "file": "beach-interlude-mobile-800.webp",
+    "requestedWidth": 800,
+    "originalWidth": 687,
+    "originalHeight": 1031
+  }
+]

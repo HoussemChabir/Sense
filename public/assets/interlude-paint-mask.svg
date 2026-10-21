@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" preserveAspectRatio="none">
+  <defs>
+    <filter id="rough" x="-8%" y="-10%" width="116%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".012 .085" numOctaves="4" seed="37" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="30" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="bleed" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5"/>
+    </filter>
+  </defs>
+  <path fill="white" filter="url(#rough)" d="M-70 154 C35 118 112 167 205 126 C292 88 367 153 461 118 C548 84 633 158 724 124 C815 91 905 151 995 112 C1085 75 1170 148 1264 116 C1360 83 1452 151 1670 108 L1670 833 C1588 826 1554 865 1490 850 C1420 832 1379 879 1312 857 C1243 835 1200 889 1134 868 C1066 846 1021 900 950 878 C882 856 836 911 767 889 C697 866 649 921 579 898 C508 875 456 922 385 904 C311 884 266 926 194 909 C117 890 61 928 -70 895 Z"/>
+  <g fill="white" filter="url(#bleed)">
+    <ellipse cx="92" cy="105" rx="13" ry="8"/>
+    <ellipse cx="151" cy="83" rx="7" ry="5"/>
+    <ellipse cx="334" cy="91" rx="18" ry="7"/>
+    <ellipse cx="404" cy="72" rx="6" ry="5"/>
+    <ellipse cx="616" cy="91" rx="11" ry="6"/>
+    <ellipse cx="785" cy="79" rx="16" ry="7"/>
+    <ellipse cx="933" cy="68" rx="6" ry="4"/>
+    <ellipse cx="1117" cy="82" rx="15" ry="6"/>
+    <ellipse cx="1378" cy="71" rx="8" ry="5"/>
+    <ellipse cx="1512" cy="91" rx="17" ry="7"/>
+  </g>
+  <g fill="white" opacity=".78">
+    <circle cx="252" cy="98" r="4"/>
+    <circle cx="520" cy="72" r="3"/>
+    <circle cx="691" cy="103" r="5"/>
+    <circle cx="1048" cy="86" r="4"/>
+    <circle cx="1219" cy="72" r="3"/>
+    <circle cx="1443" cy="96" r="5"/>
+  </g>
+</svg>

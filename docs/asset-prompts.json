@@ -1,0 +1,86 @@
+[
+  {
+    "name": "hero-desktop",
+    "prompt": "Use case: photorealistic-natural. Create one ultra-wide landscape editorial travel photograph, 1536x1024 or wider, for a premium Tunisia travel website hero. Tunisian Sahara near Douz: immense flowing golden ochre dunes, delicate wind-carved sand ripples, two travelers seen from behind seated on a dune in lower right third, one in cream linen with a rust red head scarf and one in indigo. Camel caravan tiny in distance. Pale blue cloudless sky filling upper 48 percent with empty uncluttered space for dark red headline on left, soft late-afternoon sunshine. Human subjects occupy no more than 18 percent of frame. Refined analog travel photography, warm natural color, realistic texture, peaceful cinematic vastness. No text, no logos, no borders, no collage. Wide horizontal single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/hero-desktop.png"
+  },
+  {
+    "name": "hero-mobile",
+    "prompt": "Use case: photorealistic-natural. One portrait 1024x1536 editorial photograph for a mobile Tunisia travel website. Tall composition: pale blue sunlit clear sky across upper half, then majestic Tunisian Sahara golden dunes near Douz, lower right two small travelers seen from behind sitting together on sand, cream and muted indigo clothes with rust red scarf. Delicate dune ripples in foreground. Large quiet sky for headline to be placed separately. Late afternoon sunlight, refined natural film photography, warm ochre and soft slate blue, authentic proportions. No text no logos no collage no borders.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/hero-mobile.png"
+  },
+  {
+    "name": "sahara-camp",
+    "prompt": "Use case: photorealistic-natural. One wide landscape premium editorial travel photograph in Tunisia Sahara. Cream canvas glamping tent and a vintage olive expedition 4x4 parked on sand at dusk, a small group of adults around a low campfire on the right, twilight deep blue sky and golden dunes in the distance. Wide cinematic composition, understated luxury, realistic photographic light, warm lanterns, film grain very subtle, rich shadows, human warmth, no text, no logos, no collage. Landscape 1536x1024.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/sahara-camp.png"
+  },
+  {
+    "name": "sidi-bou-said",
+    "prompt": "Use case: photorealistic-natural. One wide landscape editorial travel photograph of Sidi Bou Said Tunisia, sunlit whitewashed street, vivid Tunisian blue arched door and window shutters, bougainvillea, stone steps, a small glimpse of blue Mediterranean sea in background. Natural light, authentic Tunisian architecture, refined documentary travel magazine composition, midday shadows, subtle warm film tone. No text no logos no collage no borders. Landscape 1536x1024.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/sidi-bou-said.png"
+  },
+  {
+    "name": "culinary",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. Intimate overhead-to-oblique editorial food photograph on a rustic Tunisian courtyard table: traditional ceramic bowls of couscous with vegetables, brick pastry, harissa, olives, fresh flatbread, mint tea, hands of a Tunisian cook placing a dish. Natural soft afternoon sunlight, appetizing authentic detail, warm neutral pottery with red textile accent. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/culinary.png"
+  },
+  {
+    "name": "family-desert",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. A family of four travelers walking with a Tunisian guide and three dromedary camels along a golden sand dune near Douz Tunisia. Wide composition with people small in scene, low late-afternoon sun, blue clear sky, sand patterns in foreground, candid joyful adventurous travel magazine photograph, accurate camel anatomy. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/family-desert.png"
+  },
+  {
+    "name": "el-jem",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. The Roman amphitheatre of El Jem in Tunisia, authentic monumental tiered elliptical limestone arches photographed from inside the arena. Golden afternoon sun, two small travelers for scale, beautiful aged stone, evocative magazine travel photograph, wide cinematic architectural composition. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/el-jem.png"
+  },
+  {
+    "name": "artisan",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. Candid close documentary travel photograph of an older Tunisian male ceramic artisan at a pottery workshop in Nabeul carefully painting a handmade plate, shelves of cream and blue ceramics softly out of focus, natural light from a window, lived-in textures, warm and respectful authentic portrait. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/artisan.png"
+  },
+  {
+    "name": "coastal-stay",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. Beautiful intimate boutique hotel terrace in Sidi Bou Said Tunisia, whitewashed Tunisian arched architecture, blue shutter details, elegant teak chairs and linen cushions, small bougainvillea plants, overlooking azure Mediterranean sea. Quiet understated luxury, warm natural sunlight, photo shot through an architectural arch. No pool. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/coastal-stay.png"
+  },
+  {
+    "name": "courtyard-stay",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. A tranquil authentic Tunisian dar guesthouse courtyard in Tunis medina, cream white plaster horseshoe arches, antique blue and green geometric Tunisian tilework, central orange tree and small fountain, linen sofa and woven chairs, understated intimate luxury. Dappled morning sunlight, editorial architecture photograph. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/courtyard-stay.png"
+  },
+  {
+    "name": "oasis-panorama",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. A spectacular panoramic travel photograph of Chebika mountain oasis in southern Tunisia: large date palm grove across foreground, old ochre adobe village and rugged ochre desert escarpments in background, pale peach and light cream hazy sky occupying upper 55 percent for overlay text. Soft golden morning light, cinematic atmosphere, natural realism, no people. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/oasis-panorama.png"
+  },
+  {
+    "name": "matmata",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. Tunisian troglodyte courtyard home near Matmata carved into pale ochre earth, looking down into round sunken courtyard with whitewashed arched doorways, terracotta pots and a woven red rug, an Amazigh woman standing in doorway for scale, authentic simple vernacular architecture, soft warm desert light. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/matmata.png"
+  },
+  {
+    "name": "desert-room",
+    "prompt": "Use case: photorealistic-natural. Asset type: standalone landscape travel website photograph 1536x1024. Luxury but understated tent interior in the Tunisian Sahara, cream canvas drapes tied open to a view of golden sand dunes, large linen bed, low wooden stool, muted red woven rug, golden late-afternoon light, realistic upscale editorial hospitality photography. Cohesive warm analog film color, refined premium experiential travel brand, realistic textures and proportions. No words, no watermark, no logos, no collage, no borders. Single photograph.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/desert-room.png"
+  },
+  {
+    "name": "watercolor-edge",
+    "prompt": "Use case: illustration-story. Asset type: decorative website watercolor border overlay with transparent background. One wide horizontal watercolor pigment wash, aspect ratio about 3:1, high resolution. Rich Tunisian crimson red and warm burnt sienna watercolor, subtle ochre at the lower edge. Paint occupies a horizontal ragged band across full width, dense crimson at the TOP edge of band, trailing irregularly downward into natural translucent watercolor blooms, backruns, dry brush paper texture, feathered watery fringes and sparse delicate splatter droplets below. Bottom third mostly completely transparent. Organic handmade watercolor on cold pressed paper, sophisticated authentic traditional watercolor pigment, no clean vector curves. Only pigment strokes isolated on true transparent background; no white rectangle, no background, no words, no symbols, no objects. This will blend a desert photograph into ivory page background, so edge has dramatic uneven drips and painterly variation across width.",
+    "method": "Built-in image_gen",
+    "source": "assets/originals/watercolor-edge.png"
+  }
+]
