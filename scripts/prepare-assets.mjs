@@ -20,8 +20,8 @@ for (const filename of originals) {
 await sharp('assets/originals/watercolor-edge.png').trim().webp({ quality: 90 }).toFile(`${directory}/watercolor-edge.webp`);
 
 const interludePhotos = [
-  { name: 'beach-interlude-desktop', input: 'assets/source-photos/beach-interlude-desktop-original.jpg', widths: [800, 1600] },
-  { name: 'beach-interlude-mobile', input: 'assets/source-photos/beach-interlude-mobile-original.avif', widths: [480, 800] },
+  { name: 'beach-interlude-desktop', input: 'assets/source-photos/virgin-beach-original.jpg', widths: [800, 1600] },
+  { name: 'beach-interlude-mobile', input: 'assets/source-photos/virgin-beach-original.jpg', widths: [480, 800] },
 ];
 
 for (const photo of interludePhotos) {
