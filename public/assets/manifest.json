@@ -1,5 +1,26 @@
 [
   {
+    "name": "7ssan",
+    "file": "7ssan-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1086,
+    "originalHeight": 1448
+  },
+  {
+    "name": "7ssan",
+    "file": "7ssan-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1086,
+    "originalHeight": 1448
+  },
+  {
+    "name": "7ssan",
+    "file": "7ssan-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1086,
+    "originalHeight": 1448
+  },
+  {
     "name": "artisan",
     "file": "artisan-480.webp",
     "requestedWidth": 480,
@@ -19,6 +40,90 @@
     "requestedWidth": 1600,
     "originalWidth": 1536,
     "originalHeight": 1024
+  },
+  {
+    "name": "carpets",
+    "file": "carpets-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1185,
+    "originalHeight": 1024
+  },
+  {
+    "name": "carpets",
+    "file": "carpets-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1185,
+    "originalHeight": 1024
+  },
+  {
+    "name": "carpets",
+    "file": "carpets-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1185,
+    "originalHeight": 1024
+  },
+  {
+    "name": "carthage",
+    "file": "carthage-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 3024,
+    "originalHeight": 4032
+  },
+  {
+    "name": "carthage",
+    "file": "carthage-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 3024,
+    "originalHeight": 4032
+  },
+  {
+    "name": "carthage",
+    "file": "carthage-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 3024,
+    "originalHeight": 4032
+  },
+  {
+    "name": "chebika",
+    "file": "chebika-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1360,
+    "originalHeight": 1020
+  },
+  {
+    "name": "chebika",
+    "file": "chebika-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1360,
+    "originalHeight": 1020
+  },
+  {
+    "name": "chebika",
+    "file": "chebika-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1360,
+    "originalHeight": 1020
+  },
+  {
+    "name": "chott-sunset",
+    "file": "chott-sunset-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1254,
+    "originalHeight": 1254
+  },
+  {
+    "name": "chott-sunset",
+    "file": "chott-sunset-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1254,
+    "originalHeight": 1254
+  },
+  {
+    "name": "chott-sunset",
+    "file": "chott-sunset-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1254,
+    "originalHeight": 1254
   },
   {
     "name": "coastal-stay",
@@ -105,6 +210,48 @@
     "originalHeight": 1024
   },
   {
+    "name": "djerba",
+    "file": "djerba-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 4256,
+    "originalHeight": 2832
+  },
+  {
+    "name": "djerba",
+    "file": "djerba-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 4256,
+    "originalHeight": 2832
+  },
+  {
+    "name": "djerba",
+    "file": "djerba-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 4256,
+    "originalHeight": 2832
+  },
+  {
+    "name": "dolphin",
+    "file": "dolphin-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1402,
+    "originalHeight": 1122
+  },
+  {
+    "name": "dolphin",
+    "file": "dolphin-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1402,
+    "originalHeight": 1122
+  },
+  {
+    "name": "dolphin",
+    "file": "dolphin-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1402,
+    "originalHeight": 1122
+  },
+  {
     "name": "el-jem",
     "file": "el-jem-480.webp",
     "requestedWidth": 480,
@@ -124,6 +271,27 @@
     "requestedWidth": 1600,
     "originalWidth": 1536,
     "originalHeight": 1024
+  },
+  {
+    "name": "etoile",
+    "file": "etoile-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1122,
+    "originalHeight": 1402
+  },
+  {
+    "name": "etoile",
+    "file": "etoile-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1122,
+    "originalHeight": 1402
+  },
+  {
+    "name": "etoile",
+    "file": "etoile-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1122,
+    "originalHeight": 1402
   },
   {
     "name": "exp-adventure",
@@ -294,6 +462,27 @@
     "originalHeight": 1024
   },
   {
+    "name": "guelala",
+    "file": "guelala-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 520,
+    "originalHeight": 780
+  },
+  {
+    "name": "guelala",
+    "file": "guelala-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 520,
+    "originalHeight": 780
+  },
+  {
+    "name": "guelala",
+    "file": "guelala-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 520,
+    "originalHeight": 780
+  },
+  {
     "name": "hero-desktop",
     "file": "hero-desktop-800.webp",
     "requestedWidth": 800,
@@ -320,6 +509,27 @@
     "requestedWidth": 800,
     "originalWidth": 1024,
     "originalHeight": 1536
+  },
+  {
+    "name": "kelibia",
+    "file": "kelibia-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1264,
+    "originalHeight": 848
+  },
+  {
+    "name": "kelibia",
+    "file": "kelibia-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1264,
+    "originalHeight": 848
+  },
+  {
+    "name": "kelibia",
+    "file": "kelibia-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1264,
+    "originalHeight": 848
   },
   {
     "name": "matmata",
@@ -357,46 +567,214 @@
     "originalHeight": 1024
   },
   {
+    "name": "picnic",
+    "file": "picnic-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1045,
+    "originalHeight": 1506
+  },
+  {
+    "name": "picnic",
+    "file": "picnic-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1045,
+    "originalHeight": 1506
+  },
+  {
+    "name": "picnic",
+    "file": "picnic-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1045,
+    "originalHeight": 1506
+  },
+  {
+    "name": "rouma",
+    "file": "rouma-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1672,
+    "originalHeight": 941
+  },
+  {
+    "name": "rouma",
+    "file": "rouma-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1672,
+    "originalHeight": 941
+  },
+  {
+    "name": "rouma",
+    "file": "rouma-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1672,
+    "originalHeight": 941
+  },
+  {
+    "name": "sahara-camels",
+    "file": "sahara-camels-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1672,
+    "originalHeight": 941
+  },
+  {
+    "name": "sahara-camels",
+    "file": "sahara-camels-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1672,
+    "originalHeight": 941
+  },
+  {
+    "name": "sahara-camels",
+    "file": "sahara-camels-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1672,
+    "originalHeight": 941
+  },
+  {
     "name": "sahara-camp",
     "file": "sahara-camp-480.webp",
     "requestedWidth": 480,
-    "originalWidth": 1536,
-    "originalHeight": 1024
+    "originalWidth": 3840,
+    "originalHeight": 2558
   },
   {
     "name": "sahara-camp",
     "file": "sahara-camp-960.webp",
     "requestedWidth": 960,
-    "originalWidth": 1536,
-    "originalHeight": 1024
+    "originalWidth": 3840,
+    "originalHeight": 2558
   },
   {
     "name": "sahara-camp",
     "file": "sahara-camp-1600.webp",
     "requestedWidth": 1600,
-    "originalWidth": 1536,
-    "originalHeight": 1024
+    "originalWidth": 3840,
+    "originalHeight": 2558
+  },
+  {
+    "name": "sahara-dunes",
+    "file": "sahara-dunes-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1619,
+    "originalHeight": 971
+  },
+  {
+    "name": "sahara-dunes",
+    "file": "sahara-dunes-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1619,
+    "originalHeight": 971
+  },
+  {
+    "name": "sahara-dunes",
+    "file": "sahara-dunes-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1619,
+    "originalHeight": 971
   },
   {
     "name": "sidi-bou-said",
     "file": "sidi-bou-said-480.webp",
     "requestedWidth": 480,
-    "originalWidth": 1536,
-    "originalHeight": 1024
+    "originalWidth": 1300,
+    "originalHeight": 865
   },
   {
     "name": "sidi-bou-said",
     "file": "sidi-bou-said-960.webp",
     "requestedWidth": 960,
-    "originalWidth": 1536,
-    "originalHeight": 1024
+    "originalWidth": 1300,
+    "originalHeight": 865
   },
   {
     "name": "sidi-bou-said",
     "file": "sidi-bou-said-1600.webp",
     "requestedWidth": 1600,
-    "originalWidth": 1536,
-    "originalHeight": 1024
+    "originalWidth": 1300,
+    "originalHeight": 865
+  },
+  {
+    "name": "sidi-landscape",
+    "file": "sidi-landscape-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1548,
+    "originalHeight": 1016
+  },
+  {
+    "name": "sidi-landscape",
+    "file": "sidi-landscape-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1548,
+    "originalHeight": 1016
+  },
+  {
+    "name": "sidi-landscape",
+    "file": "sidi-landscape-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1548,
+    "originalHeight": 1016
+  },
+  {
+    "name": "souk-medina",
+    "file": "souk-medina-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1080,
+    "originalHeight": 1350
+  },
+  {
+    "name": "souk-medina",
+    "file": "souk-medina-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1080,
+    "originalHeight": 1350
+  },
+  {
+    "name": "souk-medina",
+    "file": "souk-medina-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1080,
+    "originalHeight": 1350
+  },
+  {
+    "name": "tozeur",
+    "file": "tozeur-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1448,
+    "originalHeight": 1086
+  },
+  {
+    "name": "tozeur",
+    "file": "tozeur-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1448,
+    "originalHeight": 1086
+  },
+  {
+    "name": "tozeur",
+    "file": "tozeur-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1448,
+    "originalHeight": 1086
+  },
+  {
+    "name": "treasure-map",
+    "file": "treasure-map-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 2400,
+    "originalHeight": 1800
+  },
+  {
+    "name": "treasure-map",
+    "file": "treasure-map-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 2400,
+    "originalHeight": 1800
+  },
+  {
+    "name": "treasure-map",
+    "file": "treasure-map-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 2400,
+    "originalHeight": 1800
   },
   {
     "name": "watercolor-edge",
@@ -420,31 +798,52 @@
     "originalHeight": 724
   },
   {
+    "name": "workshop",
+    "file": "workshop-480.webp",
+    "requestedWidth": 480,
+    "originalWidth": 1080,
+    "originalHeight": 1349
+  },
+  {
+    "name": "workshop",
+    "file": "workshop-960.webp",
+    "requestedWidth": 960,
+    "originalWidth": 1080,
+    "originalHeight": 1349
+  },
+  {
+    "name": "workshop",
+    "file": "workshop-1600.webp",
+    "requestedWidth": 1600,
+    "originalWidth": 1080,
+    "originalHeight": 1349
+  },
+  {
     "name": "beach-interlude-desktop",
     "file": "beach-interlude-desktop-800.webp",
     "requestedWidth": 800,
-    "originalWidth": 5616,
-    "originalHeight": 3744
+    "originalWidth": 1440,
+    "originalHeight": 1800
   },
   {
     "name": "beach-interlude-desktop",
     "file": "beach-interlude-desktop-1600.webp",
     "requestedWidth": 1600,
-    "originalWidth": 5616,
-    "originalHeight": 3744
+    "originalWidth": 1440,
+    "originalHeight": 1800
   },
   {
     "name": "beach-interlude-mobile",
     "file": "beach-interlude-mobile-480.webp",
     "requestedWidth": 480,
-    "originalWidth": 687,
-    "originalHeight": 1031
+    "originalWidth": 1440,
+    "originalHeight": 1800
   },
   {
     "name": "beach-interlude-mobile",
     "file": "beach-interlude-mobile-800.webp",
     "requestedWidth": 800,
-    "originalWidth": 687,
-    "originalHeight": 1031
+    "originalWidth": 1440,
+    "originalHeight": 1800
   }
 ]

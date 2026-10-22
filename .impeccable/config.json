@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "layout-transition",
+        "value": "*",
+        "files": [
+          "src/style.css"
+        ],
+        "createdAt": "2026-10-21T16:44:20.271Z",
+        "reason": "Claude triage: remaining hits are SVG stroke-width transitions (.atlas-connector, .map-dots), a paint property, not layout"
+      }
+    ]
+  }
+}
