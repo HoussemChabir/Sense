@@ -1,0 +1,4726 @@
+{
+ "7ssan": {
+  "hash": "49ab1c78",
+  "width": 1086,
+  "height": 1448,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1086,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1086,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/7ssan-49ab1c78-480.avif",
+    "width": 480,
+    "height": 640,
+    "quality": 87,
+    "score": 90.86,
+    "bytes": 204236
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-480.jpg",
+    "width": 480,
+    "height": 640,
+    "quality": 96,
+    "score": 90.77,
+    "bytes": 352694
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-640.avif",
+    "width": 640,
+    "height": 853,
+    "quality": 87,
+    "score": 90.88,
+    "bytes": 350830
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-640.jpg",
+    "width": 640,
+    "height": 853,
+    "quality": 96,
+    "score": 90.52,
+    "bytes": 607859
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-800.avif",
+    "width": 800,
+    "height": 1067,
+    "quality": 87,
+    "score": 90.68,
+    "bytes": 519511
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-800.jpg",
+    "width": 800,
+    "height": 1067,
+    "quality": 96,
+    "score": 90.94,
+    "bytes": 908508
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-1086.avif",
+    "width": 1086,
+    "height": 1448,
+    "quality": 87,
+    "score": 90.58,
+    "bytes": 844434
+   },
+   {
+    "file": "public/img/7ssan-49ab1c78-1086.jpg",
+    "width": 1086,
+    "height": 1448,
+    "quality": 95,
+    "score": 90.41,
+    "bytes": 1324841
+   }
+  ]
+ },
+ "atlas-beige-coast": {
+  "hash": "575b8f3a",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/atlas-beige-coast-575b8f3a-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 80,
+    "score": 90.23,
+    "bytes": 29611
+   },
+   {
+    "file": "public/img/atlas-beige-coast-575b8f3a-480.webp",
+    "width": 480,
+    "height": 320,
+    "quality": 40,
+    "score": 92.6,
+    "bytes": 43776
+   }
+  ]
+ },
+ "atlas-beige-history": {
+  "hash": "77e45e4c",
+  "width": 1774,
+  "height": 887,
+  "avif": [
+   [
+    480,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/atlas-beige-history-77e45e4c-480.avif",
+    "width": 480,
+    "height": 240,
+    "quality": 82,
+    "score": 90.42,
+    "bytes": 24716
+   },
+   {
+    "file": "public/img/atlas-beige-history-77e45e4c-480.webp",
+    "width": 480,
+    "height": 240,
+    "quality": 40,
+    "score": 91.67,
+    "bytes": 33708
+   }
+  ]
+ },
+ "atlas-beige-island": {
+  "hash": "6f57acf9",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/atlas-beige-island-6f57acf9-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 79,
+    "score": 90.37,
+    "bytes": 29715
+   },
+   {
+    "file": "public/img/atlas-beige-island-6f57acf9-480.webp",
+    "width": 480,
+    "height": 320,
+    "quality": 40,
+    "score": 92.28,
+    "bytes": 44682
+   }
+  ]
+ },
+ "atlas-beige-north": {
+  "hash": "6f4e4c05",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/atlas-beige-north-6f4e4c05-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 78,
+    "score": 90.44,
+    "bytes": 30830
+   },
+   {
+    "file": "public/img/atlas-beige-north-6f4e4c05-480.webp",
+    "width": 480,
+    "height": 320,
+    "quality": 40,
+    "score": 92.55,
+    "bytes": 43258
+   }
+  ]
+ },
+ "atlas-beige-oasis": {
+  "hash": "bbfcfff9",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/atlas-beige-oasis-bbfcfff9-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 78,
+    "score": 90.14,
+    "bytes": 57378
+   },
+   {
+    "file": "public/img/atlas-beige-oasis-bbfcfff9-480.webp",
+    "width": 480,
+    "height": 320,
+    "quality": 40,
+    "score": 92.99,
+    "bytes": 70968
+   }
+  ]
+ },
+ "atlas-beige-sahara": {
+  "hash": "71c256a6",
+  "width": 1774,
+  "height": 887,
+  "avif": [
+   [
+    480,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/atlas-beige-sahara-71c256a6-480.avif",
+    "width": 480,
+    "height": 240,
+    "quality": 79,
+    "score": 90.08,
+    "bytes": 16848
+   },
+   {
+    "file": "public/img/atlas-beige-sahara-71c256a6-480.webp",
+    "width": 480,
+    "height": 240,
+    "quality": 40,
+    "score": 93.3,
+    "bytes": 21568
+   }
+  ]
+ },
+ "beach-interlude": {
+  "hash": "08204382",
+  "width": 1440,
+  "height": 1800,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1440,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1440,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/beach-interlude-08204382-480.avif",
+    "width": 480,
+    "height": 600,
+    "quality": 87,
+    "score": 90.77,
+    "bytes": 132162
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-480.jpg",
+    "width": 480,
+    "height": 600,
+    "quality": 97,
+    "score": 90.02,
+    "bytes": 219607
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-640.avif",
+    "width": 640,
+    "height": 800,
+    "quality": 87,
+    "score": 90.67,
+    "bytes": 231328
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-640.jpg",
+    "width": 640,
+    "height": 800,
+    "quality": 98,
+    "score": 91.44,
+    "bytes": 442767
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-800.avif",
+    "width": 800,
+    "height": 1000,
+    "quality": 87,
+    "score": 90.5,
+    "bytes": 351549
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-800.jpg",
+    "width": 800,
+    "height": 1000,
+    "quality": 98,
+    "score": 91.32,
+    "bytes": 670688
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-1080.avif",
+    "width": 1080,
+    "height": 1350,
+    "quality": 87,
+    "score": 90.27,
+    "bytes": 613095
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-1080.jpg",
+    "width": 1080,
+    "height": 1350,
+    "quality": 98,
+    "score": 90.79,
+    "bytes": 1160131
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-1280.avif",
+    "width": 1280,
+    "height": 1600,
+    "quality": 87,
+    "score": 90.21,
+    "bytes": 807184
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-1280.jpg",
+    "width": 1280,
+    "height": 1600,
+    "quality": 98,
+    "score": 90.79,
+    "bytes": 1586109
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-1440.avif",
+    "width": 1440,
+    "height": 1800,
+    "quality": 86,
+    "score": 90.04,
+    "bytes": 688647
+   },
+   {
+    "file": "public/img/beach-interlude-08204382-1440.jpg",
+    "width": 1440,
+    "height": 1800,
+    "quality": 97,
+    "score": 90.29,
+    "bytes": 1330316
+   }
+  ]
+ },
+ "carpets": {
+  "hash": "0cf2eea4",
+  "width": 1185,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1185,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1185,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/carpets-0cf2eea4-480.avif",
+    "width": 480,
+    "height": 415,
+    "quality": 87,
+    "score": 90.28,
+    "bytes": 156231
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-480.jpg",
+    "width": 480,
+    "height": 415,
+    "quality": 96,
+    "score": 91.04,
+    "bytes": 263048
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-640.avif",
+    "width": 640,
+    "height": 553,
+    "quality": 87,
+    "score": 90.32,
+    "bytes": 259442
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-640.jpg",
+    "width": 640,
+    "height": 553,
+    "quality": 96,
+    "score": 90.88,
+    "bytes": 441394
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-800.avif",
+    "width": 800,
+    "height": 691,
+    "quality": 87,
+    "score": 90.28,
+    "bytes": 377349
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-800.jpg",
+    "width": 800,
+    "height": 691,
+    "quality": 96,
+    "score": 91.08,
+    "bytes": 650172
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-1185.avif",
+    "width": 1185,
+    "height": 1024,
+    "quality": 87,
+    "score": 90.19,
+    "bytes": 710074
+   },
+   {
+    "file": "public/img/carpets-0cf2eea4-1185.jpg",
+    "width": 1185,
+    "height": 1024,
+    "quality": 95,
+    "score": 90.61,
+    "bytes": 1100542
+   }
+  ]
+ },
+ "carthage": {
+  "hash": "4c3ce5c6",
+  "width": 3024,
+  "height": 4032,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1600,
+    "avif"
+   ],
+   [
+    1920,
+    "avif"
+   ],
+   [
+    3024,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ],
+   [
+    3024,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/carthage-4c3ce5c6-480.avif",
+    "width": 480,
+    "height": 640,
+    "quality": 87,
+    "score": 90.26,
+    "bytes": 112898
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-480.jpg",
+    "width": 480,
+    "height": 640,
+    "quality": 97,
+    "score": 91.21,
+    "bytes": 218357
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-640.avif",
+    "width": 640,
+    "height": 853,
+    "quality": 88,
+    "score": 90.62,
+    "bytes": 214566
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-640.jpg",
+    "width": 640,
+    "height": 853,
+    "quality": 97,
+    "score": 90.85,
+    "bytes": 375486
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-800.avif",
+    "width": 800,
+    "height": 1067,
+    "quality": 88,
+    "score": 90.21,
+    "bytes": 333941
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-800.jpg",
+    "width": 800,
+    "height": 1067,
+    "quality": 97,
+    "score": 90.61,
+    "bytes": 571169
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1080.avif",
+    "width": 1080,
+    "height": 1440,
+    "quality": 90,
+    "score": 90.36,
+    "bytes": 656832
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1080.jpg",
+    "width": 1080,
+    "height": 1440,
+    "quality": 97,
+    "score": 90.32,
+    "bytes": 987368
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1280.avif",
+    "width": 1280,
+    "height": 1707,
+    "quality": 90,
+    "score": 90.12,
+    "bytes": 930061
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1280.jpg",
+    "width": 1280,
+    "height": 1707,
+    "quality": 97,
+    "score": 90.21,
+    "bytes": 1363799
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1600.avif",
+    "width": 1600,
+    "height": 2133,
+    "quality": 91,
+    "score": 90.76,
+    "bytes": 1582437
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1600.jpg",
+    "width": 1600,
+    "height": 2133,
+    "quality": 98,
+    "score": 91.01,
+    "bytes": 2411377
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-1920.avif",
+    "width": 1920,
+    "height": 2560,
+    "quality": 91,
+    "score": 90.61,
+    "bytes": 2210008
+   },
+   {
+    "file": "public/img/carthage-4c3ce5c6-3024.jpg",
+    "width": 3024,
+    "height": 4032,
+    "quality": "original",
+    "score": 100,
+    "bytes": 2666700
+   }
+  ]
+ },
+ "chebika": {
+  "hash": "b0ea099e",
+  "width": 1360,
+  "height": 1020,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1360,
+    "webp"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    1360,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/chebika-b0ea099e-480.avif",
+    "width": 480,
+    "height": 360,
+    "quality": 84,
+    "score": 90.13,
+    "bytes": 73540
+   },
+   {
+    "file": "public/img/chebika-b0ea099e-480.jpg",
+    "width": 480,
+    "height": 360,
+    "quality": 96,
+    "score": 90.37,
+    "bytes": 128498
+   },
+   {
+    "file": "public/img/chebika-b0ea099e-640.avif",
+    "width": 640,
+    "height": 480,
+    "quality": 86,
+    "score": 90.59,
+    "bytes": 132555
+   },
+   {
+    "file": "public/img/chebika-b0ea099e-640.jpg",
+    "width": 640,
+    "height": 480,
+    "quality": 97,
+    "score": 91.14,
+    "bytes": 234659
+   },
+   {
+    "file": "public/img/chebika-b0ea099e-800.avif",
+    "width": 800,
+    "height": 600,
+    "quality": 86,
+    "score": 90.61,
+    "bytes": 202350
+   },
+   {
+    "file": "public/img/chebika-b0ea099e-1360.webp",
+    "width": 1360,
+    "height": 1020,
+    "quality": "original",
+    "score": 100,
+    "bytes": 355398
+   }
+  ]
+ },
+ "chott-sunset": {
+  "hash": "1e2cbf1f",
+  "width": 1254,
+  "height": 1254,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1254,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1254,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-480.avif",
+    "width": 480,
+    "height": 480,
+    "quality": 84,
+    "score": 90.33,
+    "bytes": 56186
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-480.jpg",
+    "width": 480,
+    "height": 480,
+    "quality": 96,
+    "score": 90.42,
+    "bytes": 146815
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-640.avif",
+    "width": 640,
+    "height": 640,
+    "quality": 86,
+    "score": 90.68,
+    "bytes": 95388
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-640.jpg",
+    "width": 640,
+    "height": 640,
+    "quality": 96,
+    "score": 90.42,
+    "bytes": 238996
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-800.avif",
+    "width": 800,
+    "height": 800,
+    "quality": 86,
+    "score": 90.22,
+    "bytes": 134380
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-800.jpg",
+    "width": 800,
+    "height": 800,
+    "quality": 96,
+    "score": 90.5,
+    "bytes": 344044
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-1080.avif",
+    "width": 1080,
+    "height": 1080,
+    "quality": 87,
+    "score": 90.78,
+    "bytes": 231568
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-1080.jpg",
+    "width": 1080,
+    "height": 1080,
+    "quality": 96,
+    "score": 90.78,
+    "bytes": 549693
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-1254.avif",
+    "width": 1254,
+    "height": 1254,
+    "quality": 87,
+    "score": 90.49,
+    "bytes": 287636
+   },
+   {
+    "file": "public/img/chott-sunset-1e2cbf1f-1254.jpg",
+    "width": 1254,
+    "height": 1254,
+    "quality": 96,
+    "score": 90.56,
+    "bytes": 687848
+   }
+  ]
+ },
+ "djerba": {
+  "hash": "2d43f9d1",
+  "width": 4256,
+  "height": 2832,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1600,
+    "avif"
+   ],
+   [
+    1920,
+    "avif"
+   ],
+   [
+    2560,
+    "avif"
+   ],
+   [
+    4256,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ],
+   [
+    1920,
+    "jpg"
+   ],
+   [
+    4256,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/djerba-2d43f9d1-480.avif",
+    "width": 480,
+    "height": 319,
+    "quality": 87,
+    "score": 90.51,
+    "bytes": 73138
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-480.jpg",
+    "width": 480,
+    "height": 319,
+    "quality": 96,
+    "score": 90.31,
+    "bytes": 138729
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-640.avif",
+    "width": 640,
+    "height": 426,
+    "quality": 87,
+    "score": 90.01,
+    "bytes": 125647
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-640.jpg",
+    "width": 640,
+    "height": 426,
+    "quality": 96,
+    "score": 90.02,
+    "bytes": 243727
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-800.avif",
+    "width": 800,
+    "height": 532,
+    "quality": 88,
+    "score": 90.81,
+    "bytes": 210634
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-800.jpg",
+    "width": 800,
+    "height": 532,
+    "quality": 96,
+    "score": 90.15,
+    "bytes": 375373
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1080.avif",
+    "width": 1080,
+    "height": 719,
+    "quality": 88,
+    "score": 90.53,
+    "bytes": 370827
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1080.jpg",
+    "width": 1080,
+    "height": 719,
+    "quality": 97,
+    "score": 91.15,
+    "bytes": 736359
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1280.avif",
+    "width": 1280,
+    "height": 852,
+    "quality": 88,
+    "score": 90.2,
+    "bytes": 503605
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1280.jpg",
+    "width": 1280,
+    "height": 852,
+    "quality": 96,
+    "score": 90.1,
+    "bytes": 914083
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1600.avif",
+    "width": 1600,
+    "height": 1065,
+    "quality": 88,
+    "score": 90.12,
+    "bytes": 759073
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1600.jpg",
+    "width": 1600,
+    "height": 1065,
+    "quality": 96,
+    "score": 90.16,
+    "bytes": 1373160
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1920.avif",
+    "width": 1920,
+    "height": 1278,
+    "quality": 90,
+    "score": 90.67,
+    "bytes": 1151747
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-1920.jpg",
+    "width": 1920,
+    "height": 1278,
+    "quality": 96,
+    "score": 90.01,
+    "bytes": 1908914
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-2560.avif",
+    "width": 2560,
+    "height": 1703,
+    "quality": 90,
+    "score": 90.38,
+    "bytes": 1895091
+   },
+   {
+    "file": "public/img/djerba-2d43f9d1-4256.jpg",
+    "width": 4256,
+    "height": 2832,
+    "quality": "original",
+    "score": 100,
+    "bytes": 3213401
+   }
+  ]
+ },
+ "djerba-island": {
+  "hash": "a9ad0939",
+  "width": 5184,
+  "height": 3456,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1600,
+    "avif"
+   ],
+   [
+    1920,
+    "avif"
+   ],
+   [
+    2560,
+    "avif"
+   ],
+   [
+    5184,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ],
+   [
+    1920,
+    "jpg"
+   ],
+   [
+    5184,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/djerba-island-a9ad0939-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 83,
+    "score": 90.44,
+    "bytes": 22489
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 95,
+    "score": 90.38,
+    "bytes": 52923
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-640.avif",
+    "width": 640,
+    "height": 427,
+    "quality": 84,
+    "score": 90.2,
+    "bytes": 37634
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-640.jpg",
+    "width": 640,
+    "height": 427,
+    "quality": 95,
+    "score": 90.25,
+    "bytes": 86382
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-800.avif",
+    "width": 800,
+    "height": 533,
+    "quality": 84,
+    "score": 90.02,
+    "bytes": 56329
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-800.jpg",
+    "width": 800,
+    "height": 533,
+    "quality": 96,
+    "score": 91.31,
+    "bytes": 160488
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1080.avif",
+    "width": 1080,
+    "height": 720,
+    "quality": 87,
+    "score": 90.54,
+    "bytes": 113363
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1080.jpg",
+    "width": 1080,
+    "height": 720,
+    "quality": 96,
+    "score": 91.2,
+    "bytes": 269024
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1280.avif",
+    "width": 1280,
+    "height": 853,
+    "quality": 87,
+    "score": 90.17,
+    "bytes": 153775
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1280.jpg",
+    "width": 1280,
+    "height": 853,
+    "quality": 96,
+    "score": 91.11,
+    "bytes": 361727
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1600.avif",
+    "width": 1600,
+    "height": 1067,
+    "quality": 88,
+    "score": 90.53,
+    "bytes": 274522
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1600.jpg",
+    "width": 1600,
+    "height": 1067,
+    "quality": 96,
+    "score": 90.79,
+    "bytes": 534497
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1920.avif",
+    "width": 1920,
+    "height": 1280,
+    "quality": 88,
+    "score": 90.2,
+    "bytes": 388927
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-1920.jpg",
+    "width": 1920,
+    "height": 1280,
+    "quality": 96,
+    "score": 90.7,
+    "bytes": 721908
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-2560.avif",
+    "width": 2560,
+    "height": 1707,
+    "quality": 90,
+    "score": 90.33,
+    "bytes": 735319
+   },
+   {
+    "file": "public/img/djerba-island-a9ad0939-5184.jpg",
+    "width": 5184,
+    "height": 3456,
+    "quality": "original",
+    "score": 100,
+    "bytes": 840816
+   }
+  ]
+ },
+ "dolphin": {
+  "hash": "fc3bd29b",
+  "width": 1402,
+  "height": 1122,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1402,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1402,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/dolphin-fc3bd29b-480.avif",
+    "width": 480,
+    "height": 384,
+    "quality": 87,
+    "score": 90.34,
+    "bytes": 78962
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-480.jpg",
+    "width": 480,
+    "height": 384,
+    "quality": 96,
+    "score": 90.93,
+    "bytes": 156465
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-640.avif",
+    "width": 640,
+    "height": 512,
+    "quality": 87,
+    "score": 90.25,
+    "bytes": 128614
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-640.jpg",
+    "width": 640,
+    "height": 512,
+    "quality": 96,
+    "score": 90.57,
+    "bytes": 263315
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-800.avif",
+    "width": 800,
+    "height": 640,
+    "quality": 87,
+    "score": 90.27,
+    "bytes": 183162
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-800.jpg",
+    "width": 800,
+    "height": 640,
+    "quality": 96,
+    "score": 90.36,
+    "bytes": 387279
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-1080.avif",
+    "width": 1080,
+    "height": 864,
+    "quality": 87,
+    "score": 90.08,
+    "bytes": 286941
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-1080.jpg",
+    "width": 1080,
+    "height": 864,
+    "quality": 96,
+    "score": 90.22,
+    "bytes": 630847
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-1402.avif",
+    "width": 1402,
+    "height": 1122,
+    "quality": 88,
+    "score": 90.64,
+    "bytes": 458047
+   },
+   {
+    "file": "public/img/dolphin-fc3bd29b-1402.jpg",
+    "width": 1402,
+    "height": 1122,
+    "quality": 96,
+    "score": 90.3,
+    "bytes": 945683
+   }
+  ]
+ },
+ "el-jem": {
+  "hash": "cb7d3ffc",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1536,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1536,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/el-jem-cb7d3ffc-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 84,
+    "score": 90.2,
+    "bytes": 57800
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 96,
+    "score": 91.08,
+    "bytes": 128150
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-640.avif",
+    "width": 640,
+    "height": 427,
+    "quality": 84,
+    "score": 90.29,
+    "bytes": 99684
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-640.jpg",
+    "width": 640,
+    "height": 427,
+    "quality": 96,
+    "score": 90.69,
+    "bytes": 218251
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-800.avif",
+    "width": 800,
+    "height": 533,
+    "quality": 84,
+    "score": 90.09,
+    "bytes": 150091
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-800.jpg",
+    "width": 800,
+    "height": 533,
+    "quality": 96,
+    "score": 90.5,
+    "bytes": 326717
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-1080.avif",
+    "width": 1080,
+    "height": 720,
+    "quality": 86,
+    "score": 90.53,
+    "bytes": 274629
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-1080.jpg",
+    "width": 1080,
+    "height": 720,
+    "quality": 96,
+    "score": 90.34,
+    "bytes": 556503
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-1280.avif",
+    "width": 1280,
+    "height": 853,
+    "quality": 86,
+    "score": 90.18,
+    "bytes": 367771
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-1280.jpg",
+    "width": 1280,
+    "height": 853,
+    "quality": 96,
+    "score": 90.45,
+    "bytes": 749109
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-1536.avif",
+    "width": 1536,
+    "height": 1024,
+    "quality": 87,
+    "score": 90.88,
+    "bytes": 574186
+   },
+   {
+    "file": "public/img/el-jem-cb7d3ffc-1536.jpg",
+    "width": 1536,
+    "height": 1024,
+    "quality": 96,
+    "score": 90.11,
+    "bytes": 1032572
+   }
+  ]
+ },
+ "etoile": {
+  "hash": "66cb77c6",
+  "width": 1122,
+  "height": 1402,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1122,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1122,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/etoile-66cb77c6-480.avif",
+    "width": 480,
+    "height": 600,
+    "quality": 88,
+    "score": 90.74,
+    "bytes": 135057
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-480.jpg",
+    "width": 480,
+    "height": 600,
+    "quality": 98,
+    "score": 91.3,
+    "bytes": 254114
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-640.avif",
+    "width": 640,
+    "height": 800,
+    "quality": 87,
+    "score": 90.01,
+    "bytes": 222404
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-640.jpg",
+    "width": 640,
+    "height": 800,
+    "quality": 98,
+    "score": 91.43,
+    "bytes": 442474
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-800.avif",
+    "width": 800,
+    "height": 1000,
+    "quality": 87,
+    "score": 90.28,
+    "bytes": 331236
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-800.jpg",
+    "width": 800,
+    "height": 1000,
+    "quality": 98,
+    "score": 91.8,
+    "bytes": 671894
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-1122.avif",
+    "width": 1122,
+    "height": 1402,
+    "quality": 87,
+    "score": 90.39,
+    "bytes": 577725
+   },
+   {
+    "file": "public/img/etoile-66cb77c6-1122.jpg",
+    "width": 1122,
+    "height": 1402,
+    "quality": 97,
+    "score": 90.84,
+    "bytes": 1027823
+   }
+  ]
+ },
+ "exp-adventure": {
+  "hash": "1dc1b39b",
+  "width": 1585,
+  "height": 792,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1585,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    1585,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-adventure-1dc1b39b-480.avif",
+    "width": 480,
+    "height": 240,
+    "quality": 84,
+    "score": 90.5,
+    "bytes": 23554
+   },
+   {
+    "file": "public/img/exp-adventure-1dc1b39b-480.jpg",
+    "width": 480,
+    "height": 240,
+    "quality": 96,
+    "score": 91.32,
+    "bytes": 56641
+   },
+   {
+    "file": "public/img/exp-adventure-1dc1b39b-640.avif",
+    "width": 640,
+    "height": 320,
+    "quality": 84,
+    "score": 90.14,
+    "bytes": 38175
+   },
+   {
+    "file": "public/img/exp-adventure-1dc1b39b-800.avif",
+    "width": 800,
+    "height": 400,
+    "quality": 84,
+    "score": 90.01,
+    "bytes": 55068
+   },
+   {
+    "file": "public/img/exp-adventure-1dc1b39b-1585.jpg",
+    "width": 1585,
+    "height": 792,
+    "quality": "original",
+    "score": 100,
+    "bytes": 92206
+   }
+  ]
+ },
+ "exp-ancient-worlds": {
+  "hash": "61b36452",
+  "width": 1600,
+  "height": 1200,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1600,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-480.avif",
+    "width": 480,
+    "height": 360,
+    "quality": 87,
+    "score": 90.87,
+    "bytes": 97163
+   },
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-480.jpg",
+    "width": 480,
+    "height": 360,
+    "quality": 95,
+    "score": 90.01,
+    "bytes": 145593
+   },
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-640.avif",
+    "width": 640,
+    "height": 480,
+    "quality": 86,
+    "score": 90.15,
+    "bytes": 144526
+   },
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-640.jpg",
+    "width": 640,
+    "height": 480,
+    "quality": 96,
+    "score": 91.05,
+    "bytes": 265296
+   },
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-800.avif",
+    "width": 800,
+    "height": 600,
+    "quality": 86,
+    "score": 90.91,
+    "bytes": 209744
+   },
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-1080.avif",
+    "width": 1080,
+    "height": 810,
+    "quality": 86,
+    "score": 90.32,
+    "bytes": 340220
+   },
+   {
+    "file": "public/img/exp-ancient-worlds-61b36452-1600.jpg",
+    "width": 1600,
+    "height": 1200,
+    "quality": "original",
+    "score": 100,
+    "bytes": 397131
+   }
+  ]
+ },
+ "exp-culinary": {
+  "hash": "f7336ed9",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1536,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    1536,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-culinary-f7336ed9-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 84,
+    "score": 90.38,
+    "bytes": 52229
+   },
+   {
+    "file": "public/img/exp-culinary-f7336ed9-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 95,
+    "score": 90.79,
+    "bytes": 101219
+   },
+   {
+    "file": "public/img/exp-culinary-f7336ed9-640.avif",
+    "width": 640,
+    "height": 427,
+    "quality": 84,
+    "score": 90.48,
+    "bytes": 82625
+   },
+   {
+    "file": "public/img/exp-culinary-f7336ed9-640.jpg",
+    "width": 640,
+    "height": 427,
+    "quality": 95,
+    "score": 90.52,
+    "bytes": 157489
+   },
+   {
+    "file": "public/img/exp-culinary-f7336ed9-800.avif",
+    "width": 800,
+    "height": 533,
+    "quality": 83,
+    "score": 90.07,
+    "bytes": 109230
+   },
+   {
+    "file": "public/img/exp-culinary-f7336ed9-1080.avif",
+    "width": 1080,
+    "height": 720,
+    "quality": 83,
+    "score": 90.12,
+    "bytes": 167579
+   },
+   {
+    "file": "public/img/exp-culinary-f7336ed9-1536.jpg",
+    "width": 1536,
+    "height": 1024,
+    "quality": "original",
+    "score": 100,
+    "bytes": 225342
+   }
+  ]
+ },
+ "exp-culture": {
+  "hash": "4e960f32",
+  "width": 940,
+  "height": 788,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    940,
+    "webp"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    940,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-culture-4e960f32-480.avif",
+    "width": 480,
+    "height": 402,
+    "quality": 87,
+    "score": 90.76,
+    "bytes": 123327
+   },
+   {
+    "file": "public/img/exp-culture-4e960f32-480.jpg",
+    "width": 480,
+    "height": 402,
+    "quality": 96,
+    "score": 90.45,
+    "bytes": 209211
+   },
+   {
+    "file": "public/img/exp-culture-4e960f32-640.avif",
+    "width": 640,
+    "height": 537,
+    "quality": 87,
+    "score": 90.9,
+    "bytes": 202730
+   },
+   {
+    "file": "public/img/exp-culture-4e960f32-940.webp",
+    "width": 940,
+    "height": 788,
+    "quality": "original",
+    "score": 100,
+    "bytes": 277142
+   }
+  ]
+ },
+ "exp-family": {
+  "hash": "1c963365",
+  "width": 1448,
+  "height": 1086,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1448,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1448,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-family-1c963365-480.avif",
+    "width": 480,
+    "height": 360,
+    "quality": 84,
+    "score": 90.28,
+    "bytes": 53663
+   },
+   {
+    "file": "public/img/exp-family-1c963365-480.jpg",
+    "width": 480,
+    "height": 360,
+    "quality": 95,
+    "score": 90.18,
+    "bytes": 113536
+   },
+   {
+    "file": "public/img/exp-family-1c963365-640.avif",
+    "width": 640,
+    "height": 480,
+    "quality": 84,
+    "score": 90.18,
+    "bytes": 82717
+   },
+   {
+    "file": "public/img/exp-family-1c963365-640.jpg",
+    "width": 640,
+    "height": 480,
+    "quality": 96,
+    "score": 90.89,
+    "bytes": 211223
+   },
+   {
+    "file": "public/img/exp-family-1c963365-800.avif",
+    "width": 800,
+    "height": 600,
+    "quality": 86,
+    "score": 90.52,
+    "bytes": 123323
+   },
+   {
+    "file": "public/img/exp-family-1c963365-800.jpg",
+    "width": 800,
+    "height": 600,
+    "quality": 96,
+    "score": 90.64,
+    "bytes": 302616
+   },
+   {
+    "file": "public/img/exp-family-1c963365-1080.avif",
+    "width": 1080,
+    "height": 810,
+    "quality": 84,
+    "score": 90.07,
+    "bytes": 180550
+   },
+   {
+    "file": "public/img/exp-family-1c963365-1080.jpg",
+    "width": 1080,
+    "height": 810,
+    "quality": 96,
+    "score": 90.76,
+    "bytes": 488622
+   },
+   {
+    "file": "public/img/exp-family-1c963365-1280.avif",
+    "width": 1280,
+    "height": 960,
+    "quality": 86,
+    "score": 90.41,
+    "bytes": 240430
+   },
+   {
+    "file": "public/img/exp-family-1c963365-1280.jpg",
+    "width": 1280,
+    "height": 960,
+    "quality": 96,
+    "score": 90.84,
+    "bytes": 631030
+   },
+   {
+    "file": "public/img/exp-family-1c963365-1448.avif",
+    "width": 1448,
+    "height": 1086,
+    "quality": 86,
+    "score": 90.2,
+    "bytes": 285041
+   },
+   {
+    "file": "public/img/exp-family-1c963365-1448.jpg",
+    "width": 1448,
+    "height": 1086,
+    "quality": 96,
+    "score": 90.61,
+    "bytes": 758714
+   }
+  ]
+ },
+ "exp-go-local": {
+  "hash": "f19b60e0",
+  "width": 1024,
+  "height": 626,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    1024,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    1024,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-go-local-f19b60e0-480.avif",
+    "width": 480,
+    "height": 293,
+    "quality": 86,
+    "score": 90.03,
+    "bytes": 73503
+   },
+   {
+    "file": "public/img/exp-go-local-f19b60e0-480.jpg",
+    "width": 480,
+    "height": 293,
+    "quality": 96,
+    "score": 90.71,
+    "bytes": 131334
+   },
+   {
+    "file": "public/img/exp-go-local-f19b60e0-640.avif",
+    "width": 640,
+    "height": 391,
+    "quality": 87,
+    "score": 90.95,
+    "bytes": 134637
+   },
+   {
+    "file": "public/img/exp-go-local-f19b60e0-1024.jpg",
+    "width": 1024,
+    "height": 626,
+    "quality": "original",
+    "score": 100,
+    "bytes": 201605
+   }
+  ]
+ },
+ "exp-off-the-beaten-path": {
+  "hash": "2c29bfac",
+  "width": 2288,
+  "height": 1712,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1600,
+    "avif"
+   ],
+   [
+    1920,
+    "avif"
+   ],
+   [
+    2288,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ],
+   [
+    1920,
+    "jpg"
+   ],
+   [
+    2288,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-480.avif",
+    "width": 480,
+    "height": 359,
+    "quality": 86,
+    "score": 90.31,
+    "bytes": 74647
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-480.jpg",
+    "width": 480,
+    "height": 359,
+    "quality": 96,
+    "score": 90.19,
+    "bytes": 134751
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-640.avif",
+    "width": 640,
+    "height": 479,
+    "quality": 87,
+    "score": 90.79,
+    "bytes": 148087
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-640.jpg",
+    "width": 640,
+    "height": 479,
+    "quality": 96,
+    "score": 90.09,
+    "bytes": 236503
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-800.avif",
+    "width": 800,
+    "height": 599,
+    "quality": 87,
+    "score": 90.58,
+    "bytes": 230892
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-800.jpg",
+    "width": 800,
+    "height": 599,
+    "quality": 96,
+    "score": 90.12,
+    "bytes": 360358
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1080.avif",
+    "width": 1080,
+    "height": 808,
+    "quality": 87,
+    "score": 90.34,
+    "bytes": 403842
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1080.jpg",
+    "width": 1080,
+    "height": 808,
+    "quality": 96,
+    "score": 90.24,
+    "bytes": 623022
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1280.avif",
+    "width": 1280,
+    "height": 958,
+    "quality": 87,
+    "score": 90.19,
+    "bytes": 540528
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1280.jpg",
+    "width": 1280,
+    "height": 958,
+    "quality": 96,
+    "score": 90.39,
+    "bytes": 842150
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1600.avif",
+    "width": 1600,
+    "height": 1197,
+    "quality": 87,
+    "score": 90.24,
+    "bytes": 764337
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1600.jpg",
+    "width": 1600,
+    "height": 1197,
+    "quality": 96,
+    "score": 90.84,
+    "bytes": 1229417
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1920.avif",
+    "width": 1920,
+    "height": 1437,
+    "quality": 87,
+    "score": 90.24,
+    "bytes": 994280
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-1920.jpg",
+    "width": 1920,
+    "height": 1437,
+    "quality": 95,
+    "score": 90.01,
+    "bytes": 1371530
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-2288.avif",
+    "width": 2288,
+    "height": 1712,
+    "quality": 84,
+    "score": 90.16,
+    "bytes": 828863
+   },
+   {
+    "file": "public/img/exp-off-the-beaten-path-2c29bfac-2288.jpg",
+    "width": 2288,
+    "height": 1712,
+    "quality": 90,
+    "score": 91.02,
+    "bytes": 1047913
+   }
+  ]
+ },
+ "family-desert": {
+  "hash": "d21d8543",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1536,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1536,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/family-desert-d21d8543-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 84,
+    "score": 90.06,
+    "bytes": 35184
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 95,
+    "score": 90.11,
+    "bytes": 82687
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-640.avif",
+    "width": 640,
+    "height": 427,
+    "quality": 86,
+    "score": 90.41,
+    "bytes": 63386
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-640.jpg",
+    "width": 640,
+    "height": 427,
+    "quality": 96,
+    "score": 91.2,
+    "bytes": 167033
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-800.avif",
+    "width": 800,
+    "height": 533,
+    "quality": 86,
+    "score": 90.15,
+    "bytes": 93579
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-800.jpg",
+    "width": 800,
+    "height": 533,
+    "quality": 96,
+    "score": 90.66,
+    "bytes": 245320
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-1080.avif",
+    "width": 1080,
+    "height": 720,
+    "quality": 87,
+    "score": 90.65,
+    "bytes": 177075
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-1080.jpg",
+    "width": 1080,
+    "height": 720,
+    "quality": 96,
+    "score": 90.17,
+    "bytes": 407970
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-1280.avif",
+    "width": 1280,
+    "height": 853,
+    "quality": 87,
+    "score": 90.44,
+    "bytes": 238765
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-1280.jpg",
+    "width": 1280,
+    "height": 853,
+    "quality": 96,
+    "score": 90.3,
+    "bytes": 542944
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-1536.avif",
+    "width": 1536,
+    "height": 1024,
+    "quality": 87,
+    "score": 90.06,
+    "bytes": 339942
+   },
+   {
+    "file": "public/img/family-desert-d21d8543-1536.jpg",
+    "width": 1536,
+    "height": 1024,
+    "quality": 97,
+    "score": 90.4,
+    "bytes": 824221
+   }
+  ]
+ },
+ "guelala": {
+  "hash": "eacf96c7",
+  "width": 520,
+  "height": 780,
+  "avif": [
+   [
+    520,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    520,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/guelala-eacf96c7-520.avif",
+    "width": 520,
+    "height": 780,
+    "quality": 83,
+    "score": 90.03,
+    "bytes": 115598
+   },
+   {
+    "file": "public/img/guelala-eacf96c7-520.jpg",
+    "width": 520,
+    "height": 780,
+    "quality": 95,
+    "score": 90.49,
+    "bytes": 211684
+   }
+  ]
+ },
+ "hero-desktop": {
+  "hash": "901fbec7",
+  "width": 1536,
+  "height": 1024,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1536,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1536,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/hero-desktop-901fbec7-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 84,
+    "score": 90.1,
+    "bytes": 23262
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 96,
+    "score": 90.87,
+    "bytes": 73299
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-640.avif",
+    "width": 640,
+    "height": 427,
+    "quality": 86,
+    "score": 90.4,
+    "bytes": 40318
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-640.jpg",
+    "width": 640,
+    "height": 427,
+    "quality": 97,
+    "score": 90.98,
+    "bytes": 135725
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-800.avif",
+    "width": 800,
+    "height": 533,
+    "quality": 86,
+    "score": 90.26,
+    "bytes": 58153
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-800.jpg",
+    "width": 800,
+    "height": 533,
+    "quality": 97,
+    "score": 90.61,
+    "bytes": 198489
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-1080.avif",
+    "width": 1080,
+    "height": 720,
+    "quality": 87,
+    "score": 90.4,
+    "bytes": 105912
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-1080.jpg",
+    "width": 1080,
+    "height": 720,
+    "quality": 97,
+    "score": 90.33,
+    "bytes": 329877
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-1280.avif",
+    "width": 1280,
+    "height": 853,
+    "quality": 87,
+    "score": 90.11,
+    "bytes": 140005
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-1280.jpg",
+    "width": 1280,
+    "height": 853,
+    "quality": 97,
+    "score": 90.19,
+    "bytes": 434216
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-1536.avif",
+    "width": 1536,
+    "height": 1024,
+    "quality": 88,
+    "score": 90.03,
+    "bytes": 227013
+   },
+   {
+    "file": "public/img/hero-desktop-901fbec7-1536.jpg",
+    "width": 1536,
+    "height": 1024,
+    "quality": 98,
+    "score": 90.22,
+    "bytes": 717971
+   }
+  ]
+ },
+ "hero-mobile": {
+  "hash": "5c1284c9",
+  "width": 1024,
+  "height": 1536,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1024,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1024,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/hero-mobile-5c1284c9-480.avif",
+    "width": 480,
+    "height": 720,
+    "quality": 86,
+    "score": 90.5,
+    "bytes": 55131
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-480.jpg",
+    "width": 480,
+    "height": 720,
+    "quality": 96,
+    "score": 90.13,
+    "bytes": 152552
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-640.avif",
+    "width": 640,
+    "height": 960,
+    "quality": 86,
+    "score": 90.05,
+    "bytes": 89946
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-640.jpg",
+    "width": 640,
+    "height": 960,
+    "quality": 97,
+    "score": 90.48,
+    "bytes": 282860
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-800.avif",
+    "width": 800,
+    "height": 1200,
+    "quality": 87,
+    "score": 90.39,
+    "bytes": 153656
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-800.jpg",
+    "width": 800,
+    "height": 1200,
+    "quality": 97,
+    "score": 90.23,
+    "bytes": 413604
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-1024.avif",
+    "width": 1024,
+    "height": 1536,
+    "quality": 88,
+    "score": 90.29,
+    "bytes": 282054
+   },
+   {
+    "file": "public/img/hero-mobile-5c1284c9-1024.jpg",
+    "width": 1024,
+    "height": 1536,
+    "quality": 98,
+    "score": 90.12,
+    "bytes": 778903
+   }
+  ]
+ },
+ "kelibia": {
+  "hash": "abd0e364",
+  "width": 1264,
+  "height": 848,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1264,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1264,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/kelibia-abd0e364-480.avif",
+    "width": 480,
+    "height": 322,
+    "quality": 87,
+    "score": 90.63,
+    "bytes": 67863
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-480.jpg",
+    "width": 480,
+    "height": 322,
+    "quality": 97,
+    "score": 90.97,
+    "bytes": 133580
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-640.avif",
+    "width": 640,
+    "height": 429,
+    "quality": 87,
+    "score": 90.41,
+    "bytes": 115557
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-640.jpg",
+    "width": 640,
+    "height": 429,
+    "quality": 97,
+    "score": 90.65,
+    "bytes": 224453
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-800.avif",
+    "width": 800,
+    "height": 537,
+    "quality": 87,
+    "score": 90.28,
+    "bytes": 174603
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-800.jpg",
+    "width": 800,
+    "height": 537,
+    "quality": 97,
+    "score": 90.68,
+    "bytes": 336228
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-1080.avif",
+    "width": 1080,
+    "height": 725,
+    "quality": 88,
+    "score": 90.6,
+    "bytes": 320761
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-1080.jpg",
+    "width": 1080,
+    "height": 725,
+    "quality": 97,
+    "score": 90.75,
+    "bytes": 567855
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-1264.avif",
+    "width": 1264,
+    "height": 848,
+    "quality": 88,
+    "score": 90.51,
+    "bytes": 439480
+   },
+   {
+    "file": "public/img/kelibia-abd0e364-1264.jpg",
+    "width": 1264,
+    "height": 848,
+    "quality": 97,
+    "score": 90.13,
+    "bytes": 740736
+   }
+  ]
+ },
+ "picnic": {
+  "hash": "da69741f",
+  "width": 1045,
+  "height": 1506,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1045,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1045,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/picnic-da69741f-480.avif",
+    "width": 480,
+    "height": 692,
+    "quality": 86,
+    "score": 90.15,
+    "bytes": 179903
+   },
+   {
+    "file": "public/img/picnic-da69741f-480.jpg",
+    "width": 480,
+    "height": 692,
+    "quality": 95,
+    "score": 90.2,
+    "bytes": 305329
+   },
+   {
+    "file": "public/img/picnic-da69741f-640.avif",
+    "width": 640,
+    "height": 922,
+    "quality": 86,
+    "score": 90.16,
+    "bytes": 281708
+   },
+   {
+    "file": "public/img/picnic-da69741f-640.jpg",
+    "width": 640,
+    "height": 922,
+    "quality": 95,
+    "score": 90.35,
+    "bytes": 489628
+   },
+   {
+    "file": "public/img/picnic-da69741f-800.avif",
+    "width": 800,
+    "height": 1153,
+    "quality": 86,
+    "score": 90.15,
+    "bytes": 383667
+   },
+   {
+    "file": "public/img/picnic-da69741f-800.jpg",
+    "width": 800,
+    "height": 1153,
+    "quality": 94,
+    "score": 90.02,
+    "bytes": 653393
+   },
+   {
+    "file": "public/img/picnic-da69741f-1045.avif",
+    "width": 1045,
+    "height": 1506,
+    "quality": 86,
+    "score": 90.14,
+    "bytes": 555998
+   },
+   {
+    "file": "public/img/picnic-da69741f-1045.jpg",
+    "width": 1045,
+    "height": 1506,
+    "quality": 94,
+    "score": 90.37,
+    "bytes": 975881
+   }
+  ]
+ },
+ "rouma": {
+  "hash": "9540bc92",
+  "width": 1672,
+  "height": 941,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1672,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1672,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/rouma-9540bc92-480.avif",
+    "width": 480,
+    "height": 270,
+    "quality": 86,
+    "score": 90.59,
+    "bytes": 58496
+   },
+   {
+    "file": "public/img/rouma-9540bc92-480.jpg",
+    "width": 480,
+    "height": 270,
+    "quality": 96,
+    "score": 90.72,
+    "bytes": 118859
+   },
+   {
+    "file": "public/img/rouma-9540bc92-640.avif",
+    "width": 640,
+    "height": 360,
+    "quality": 86,
+    "score": 90.48,
+    "bytes": 96963
+   },
+   {
+    "file": "public/img/rouma-9540bc92-640.jpg",
+    "width": 640,
+    "height": 360,
+    "quality": 96,
+    "score": 90.3,
+    "bytes": 200682
+   },
+   {
+    "file": "public/img/rouma-9540bc92-800.avif",
+    "width": 800,
+    "height": 450,
+    "quality": 86,
+    "score": 90.16,
+    "bytes": 146002
+   },
+   {
+    "file": "public/img/rouma-9540bc92-800.jpg",
+    "width": 800,
+    "height": 450,
+    "quality": 96,
+    "score": 90.01,
+    "bytes": 305903
+   },
+   {
+    "file": "public/img/rouma-9540bc92-1080.avif",
+    "width": 1080,
+    "height": 608,
+    "quality": 86,
+    "score": 90.14,
+    "bytes": 246100
+   },
+   {
+    "file": "public/img/rouma-9540bc92-1080.jpg",
+    "width": 1080,
+    "height": 608,
+    "quality": 97,
+    "score": 90.86,
+    "bytes": 572653
+   },
+   {
+    "file": "public/img/rouma-9540bc92-1280.avif",
+    "width": 1280,
+    "height": 720,
+    "quality": 87,
+    "score": 90.86,
+    "bytes": 352728
+   },
+   {
+    "file": "public/img/rouma-9540bc92-1280.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 97,
+    "score": 90.9,
+    "bytes": 765273
+   },
+   {
+    "file": "public/img/rouma-9540bc92-1672.avif",
+    "width": 1672,
+    "height": 941,
+    "quality": 87,
+    "score": 90.59,
+    "bytes": 538713
+   },
+   {
+    "file": "public/img/rouma-9540bc92-1672.jpg",
+    "width": 1672,
+    "height": 941,
+    "quality": 96,
+    "score": 90.09,
+    "bytes": 1076823
+   }
+  ]
+ },
+ "sahara-camels": {
+  "hash": "bac951f1",
+  "width": 1672,
+  "height": 941,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1672,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1672,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/sahara-camels-bac951f1-480.avif",
+    "width": 480,
+    "height": 270,
+    "quality": 84,
+    "score": 90.22,
+    "bytes": 38937
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-480.jpg",
+    "width": 480,
+    "height": 270,
+    "quality": 96,
+    "score": 90.9,
+    "bytes": 91134
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-640.avif",
+    "width": 640,
+    "height": 360,
+    "quality": 84,
+    "score": 90.05,
+    "bytes": 64399
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-640.jpg",
+    "width": 640,
+    "height": 360,
+    "quality": 96,
+    "score": 90.75,
+    "bytes": 153269
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-800.avif",
+    "width": 800,
+    "height": 450,
+    "quality": 86,
+    "score": 90.29,
+    "bytes": 101237
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-800.jpg",
+    "width": 800,
+    "height": 450,
+    "quality": 96,
+    "score": 90.66,
+    "bytes": 231433
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-1080.avif",
+    "width": 1080,
+    "height": 608,
+    "quality": 87,
+    "score": 90.91,
+    "bytes": 188261
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-1080.jpg",
+    "width": 1080,
+    "height": 608,
+    "quality": 96,
+    "score": 90.31,
+    "bytes": 391399
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-1280.avif",
+    "width": 1280,
+    "height": 720,
+    "quality": 87,
+    "score": 90.69,
+    "bytes": 250072
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-1280.jpg",
+    "width": 1280,
+    "height": 720,
+    "quality": 96,
+    "score": 90.25,
+    "bytes": 522946
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-1672.avif",
+    "width": 1672,
+    "height": 941,
+    "quality": 87,
+    "score": 90.36,
+    "bytes": 389940
+   },
+   {
+    "file": "public/img/sahara-camels-bac951f1-1672.jpg",
+    "width": 1672,
+    "height": 941,
+    "quality": 96,
+    "score": 90.2,
+    "bytes": 816423
+   }
+  ]
+ },
+ "sahara-camp": {
+  "hash": "26752d5e",
+  "width": 3840,
+  "height": 2558,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1600,
+    "avif"
+   ],
+   [
+    1920,
+    "avif"
+   ],
+   [
+    2560,
+    "avif"
+   ],
+   [
+    3840,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ],
+   [
+    1920,
+    "jpg"
+   ],
+   [
+    2560,
+    "jpg"
+   ],
+   [
+    3840,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/sahara-camp-26752d5e-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 83,
+    "score": 90.32,
+    "bytes": 38995
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 95,
+    "score": 90.48,
+    "bytes": 79915
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-640.avif",
+    "width": 640,
+    "height": 426,
+    "quality": 83,
+    "score": 90.31,
+    "bytes": 57681
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-640.jpg",
+    "width": 640,
+    "height": 426,
+    "quality": 94,
+    "score": 90.33,
+    "bytes": 115428
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-800.avif",
+    "width": 800,
+    "height": 533,
+    "quality": 82,
+    "score": 90.05,
+    "bytes": 72495
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-800.jpg",
+    "width": 800,
+    "height": 533,
+    "quality": 93,
+    "score": 90.14,
+    "bytes": 145411
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1080.avif",
+    "width": 1080,
+    "height": 719,
+    "quality": 82,
+    "score": 90.24,
+    "bytes": 102771
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1080.jpg",
+    "width": 1080,
+    "height": 719,
+    "quality": 93,
+    "score": 90.46,
+    "bytes": 221256
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1280.avif",
+    "width": 1280,
+    "height": 853,
+    "quality": 82,
+    "score": 90.36,
+    "bytes": 124179
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1280.jpg",
+    "width": 1280,
+    "height": 853,
+    "quality": 93,
+    "score": 90.65,
+    "bytes": 281887
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1600.avif",
+    "width": 1600,
+    "height": 1066,
+    "quality": 80,
+    "score": 90.06,
+    "bytes": 148027
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1600.jpg",
+    "width": 1600,
+    "height": 1066,
+    "quality": 92,
+    "score": 90.1,
+    "bytes": 339380
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1920.avif",
+    "width": 1920,
+    "height": 1279,
+    "quality": 80,
+    "score": 90.13,
+    "bytes": 176565
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-1920.jpg",
+    "width": 1920,
+    "height": 1279,
+    "quality": 92,
+    "score": 90.02,
+    "bytes": 432694
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-2560.avif",
+    "width": 2560,
+    "height": 1705,
+    "quality": 80,
+    "score": 90.11,
+    "bytes": 231238
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-2560.jpg",
+    "width": 2560,
+    "height": 1705,
+    "quality": 93,
+    "score": 90.54,
+    "bytes": 727694
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-3840.avif",
+    "width": 3840,
+    "height": 2558,
+    "quality": 82,
+    "score": 90.05,
+    "bytes": 349363
+   },
+   {
+    "file": "public/img/sahara-camp-26752d5e-3840.jpg",
+    "width": 3840,
+    "height": 2558,
+    "quality": 94,
+    "score": 90.03,
+    "bytes": 1371305
+   }
+  ]
+ },
+ "sahara-dunes": {
+  "hash": "6e11b781",
+  "width": 1619,
+  "height": 971,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1619,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1619,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/sahara-dunes-6e11b781-480.avif",
+    "width": 480,
+    "height": 288,
+    "quality": 87,
+    "score": 91.06,
+    "bytes": 43653
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-480.jpg",
+    "width": 480,
+    "height": 288,
+    "quality": 96,
+    "score": 90.38,
+    "bytes": 104725
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-640.avif",
+    "width": 640,
+    "height": 384,
+    "quality": 86,
+    "score": 90.02,
+    "bytes": 64617
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-640.jpg",
+    "width": 640,
+    "height": 384,
+    "quality": 96,
+    "score": 90.11,
+    "bytes": 173715
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-800.avif",
+    "width": 800,
+    "height": 480,
+    "quality": 87,
+    "score": 90.93,
+    "bytes": 105556
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-800.jpg",
+    "width": 800,
+    "height": 480,
+    "quality": 96,
+    "score": 90.11,
+    "bytes": 257673
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-1080.avif",
+    "width": 1080,
+    "height": 648,
+    "quality": 87,
+    "score": 90.77,
+    "bytes": 178675
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-1080.jpg",
+    "width": 1080,
+    "height": 648,
+    "quality": 96,
+    "score": 90.32,
+    "bytes": 434183
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-1280.avif",
+    "width": 1280,
+    "height": 768,
+    "quality": 87,
+    "score": 90.5,
+    "bytes": 237561
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-1280.jpg",
+    "width": 1280,
+    "height": 768,
+    "quality": 96,
+    "score": 90.47,
+    "bytes": 577019
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-1619.avif",
+    "width": 1619,
+    "height": 971,
+    "quality": 87,
+    "score": 90.35,
+    "bytes": 353922
+   },
+   {
+    "file": "public/img/sahara-dunes-6e11b781-1619.jpg",
+    "width": 1619,
+    "height": 971,
+    "quality": 96,
+    "score": 90.4,
+    "bytes": 850478
+   }
+  ]
+ },
+ "sidi-bou-said": {
+  "hash": "7f358623",
+  "width": 1300,
+  "height": 865,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1300,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1300,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/sidi-bou-said-7f358623-480.avif",
+    "width": 480,
+    "height": 319,
+    "quality": 86,
+    "score": 90.58,
+    "bytes": 56390
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-480.jpg",
+    "width": 480,
+    "height": 319,
+    "quality": 95,
+    "score": 90.32,
+    "bytes": 104674
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-640.avif",
+    "width": 640,
+    "height": 426,
+    "quality": 86,
+    "score": 90.31,
+    "bytes": 87834
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-640.jpg",
+    "width": 640,
+    "height": 426,
+    "quality": 95,
+    "score": 90.24,
+    "bytes": 165145
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-800.avif",
+    "width": 800,
+    "height": 532,
+    "quality": 86,
+    "score": 90.03,
+    "bytes": 122344
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-800.jpg",
+    "width": 800,
+    "height": 532,
+    "quality": 95,
+    "score": 90.14,
+    "bytes": 232412
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-1080.avif",
+    "width": 1080,
+    "height": 719,
+    "quality": 87,
+    "score": 90.58,
+    "bytes": 213257
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-1080.jpg",
+    "width": 1080,
+    "height": 719,
+    "quality": 95,
+    "score": 90.18,
+    "bytes": 364073
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-1300.avif",
+    "width": 1300,
+    "height": 865,
+    "quality": 87,
+    "score": 90.71,
+    "bytes": 289934
+   },
+   {
+    "file": "public/img/sidi-bou-said-7f358623-1300.jpg",
+    "width": 1300,
+    "height": 865,
+    "quality": "original",
+    "score": 100,
+    "bytes": 423817
+   }
+  ]
+ },
+ "sidi-landscape": {
+  "hash": "89eca432",
+  "width": 1548,
+  "height": 1016,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1548,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1548,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/sidi-landscape-89eca432-480.avif",
+    "width": 480,
+    "height": 315,
+    "quality": 87,
+    "score": 90.75,
+    "bytes": 69551
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-480.jpg",
+    "width": 480,
+    "height": 315,
+    "quality": 96,
+    "score": 90.98,
+    "bytes": 141263
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-640.avif",
+    "width": 640,
+    "height": 420,
+    "quality": 87,
+    "score": 90.89,
+    "bytes": 111619
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-640.jpg",
+    "width": 640,
+    "height": 420,
+    "quality": 96,
+    "score": 90.74,
+    "bytes": 230364
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-800.avif",
+    "width": 800,
+    "height": 525,
+    "quality": 87,
+    "score": 90.92,
+    "bytes": 160323
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-800.jpg",
+    "width": 800,
+    "height": 525,
+    "quality": 96,
+    "score": 90.47,
+    "bytes": 336532
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-1080.avif",
+    "width": 1080,
+    "height": 709,
+    "quality": 87,
+    "score": 90.6,
+    "bytes": 258363
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-1080.jpg",
+    "width": 1080,
+    "height": 709,
+    "quality": 96,
+    "score": 90.26,
+    "bytes": 551108
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-1280.avif",
+    "width": 1280,
+    "height": 840,
+    "quality": 87,
+    "score": 90.43,
+    "bytes": 332602
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-1280.jpg",
+    "width": 1280,
+    "height": 840,
+    "quality": 96,
+    "score": 90.4,
+    "bytes": 718708
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-1548.avif",
+    "width": 1548,
+    "height": 1016,
+    "quality": 87,
+    "score": 90.18,
+    "bytes": 445719
+   },
+   {
+    "file": "public/img/sidi-landscape-89eca432-1548.jpg",
+    "width": 1548,
+    "height": 1016,
+    "quality": 96,
+    "score": 90.25,
+    "bytes": 969215
+   }
+  ]
+ },
+ "souk-medina": {
+  "hash": "de240192",
+  "width": 1080,
+  "height": 1350,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/souk-medina-de240192-480.avif",
+    "width": 480,
+    "height": 600,
+    "quality": 87,
+    "score": 90.27,
+    "bytes": 174194
+   },
+   {
+    "file": "public/img/souk-medina-de240192-480.jpg",
+    "width": 480,
+    "height": 600,
+    "quality": 96,
+    "score": 90.47,
+    "bytes": 310385
+   },
+   {
+    "file": "public/img/souk-medina-de240192-640.avif",
+    "width": 640,
+    "height": 800,
+    "quality": 87,
+    "score": 90.1,
+    "bytes": 289370
+   },
+   {
+    "file": "public/img/souk-medina-de240192-640.jpg",
+    "width": 640,
+    "height": 800,
+    "quality": 96,
+    "score": 90.63,
+    "bytes": 526677
+   },
+   {
+    "file": "public/img/souk-medina-de240192-800.avif",
+    "width": 800,
+    "height": 1000,
+    "quality": 88,
+    "score": 90.86,
+    "bytes": 454310
+   },
+   {
+    "file": "public/img/souk-medina-de240192-800.jpg",
+    "width": 800,
+    "height": 1000,
+    "quality": 96,
+    "score": 90.84,
+    "bytes": 783736
+   },
+   {
+    "file": "public/img/souk-medina-de240192-1080.avif",
+    "width": 1080,
+    "height": 1350,
+    "quality": 88,
+    "score": 90.43,
+    "bytes": 770463
+   },
+   {
+    "file": "public/img/souk-medina-de240192-1080.jpg",
+    "width": 1080,
+    "height": 1350,
+    "quality": 96,
+    "score": 90.63,
+    "bytes": 1341631
+   }
+  ]
+ },
+ "tozeur": {
+  "hash": "8be20129",
+  "width": 1448,
+  "height": 1086,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1280,
+    "avif"
+   ],
+   [
+    1448,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ],
+   [
+    1280,
+    "jpg"
+   ],
+   [
+    1448,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/tozeur-8be20129-480.avif",
+    "width": 480,
+    "height": 360,
+    "quality": 86,
+    "score": 90.1,
+    "bytes": 95254
+   },
+   {
+    "file": "public/img/tozeur-8be20129-480.jpg",
+    "width": 480,
+    "height": 360,
+    "quality": 96,
+    "score": 90.6,
+    "bytes": 181783
+   },
+   {
+    "file": "public/img/tozeur-8be20129-640.avif",
+    "width": 640,
+    "height": 480,
+    "quality": 87,
+    "score": 90.92,
+    "bytes": 177557
+   },
+   {
+    "file": "public/img/tozeur-8be20129-640.jpg",
+    "width": 640,
+    "height": 480,
+    "quality": 96,
+    "score": 90.32,
+    "bytes": 316921
+   },
+   {
+    "file": "public/img/tozeur-8be20129-800.avif",
+    "width": 800,
+    "height": 600,
+    "quality": 87,
+    "score": 90.87,
+    "bytes": 267360
+   },
+   {
+    "file": "public/img/tozeur-8be20129-800.jpg",
+    "width": 800,
+    "height": 600,
+    "quality": 96,
+    "score": 90.39,
+    "bytes": 483113
+   },
+   {
+    "file": "public/img/tozeur-8be20129-1080.avif",
+    "width": 1080,
+    "height": 810,
+    "quality": 87,
+    "score": 90.62,
+    "bytes": 449900
+   },
+   {
+    "file": "public/img/tozeur-8be20129-1080.jpg",
+    "width": 1080,
+    "height": 810,
+    "quality": 96,
+    "score": 90.84,
+    "bytes": 827430
+   },
+   {
+    "file": "public/img/tozeur-8be20129-1280.avif",
+    "width": 1280,
+    "height": 960,
+    "quality": 87,
+    "score": 90.45,
+    "bytes": 579896
+   },
+   {
+    "file": "public/img/tozeur-8be20129-1280.jpg",
+    "width": 1280,
+    "height": 960,
+    "quality": 95,
+    "score": 90.04,
+    "bytes": 942104
+   },
+   {
+    "file": "public/img/tozeur-8be20129-1448.avif",
+    "width": 1448,
+    "height": 1086,
+    "quality": 87,
+    "score": 90.5,
+    "bytes": 710791
+   },
+   {
+    "file": "public/img/tozeur-8be20129-1448.jpg",
+    "width": 1448,
+    "height": 1086,
+    "quality": 95,
+    "score": 90.03,
+    "bytes": 1153168
+   }
+  ]
+ },
+ "watercolor-edge": {
+  "hash": "17b376be",
+  "width": 2172,
+  "height": 491,
+  "avif": [
+   [
+    2172,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    2172,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "src/assets/watercolor-edge.avif",
+    "width": 2172,
+    "height": 491,
+    "quality": 88,
+    "score": 90.18,
+    "bytes": 495545
+   },
+   {
+    "file": "src/assets/watercolor-edge.webp",
+    "width": 2172,
+    "height": 491,
+    "quality": 60,
+    "score": 92.36,
+    "bytes": 771816
+   }
+  ]
+ },
+ "watercolor-edge-1x": {
+  "hash": "39913be3",
+  "width": 2172,
+  "height": 491,
+  "avif": [
+   [
+    2172,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    2172,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "src/assets/watercolor-edge-1x.avif",
+    "width": 2172,
+    "height": 300,
+    "quality": 87,
+    "score": 90.23,
+    "bytes": 316813
+   },
+   {
+    "file": "src/assets/watercolor-edge-1x.webp",
+    "width": 2172,
+    "height": 300,
+    "quality": 40,
+    "score": 90.22,
+    "bytes": 381770
+   }
+  ]
+ },
+ "watercolor-edge-flipped": {
+  "hash": "f5ddbe0a",
+  "width": 1600,
+  "height": 362,
+  "avif": [
+   [
+    1600,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    1600,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "src/assets/watercolor-edge-flipped.avif",
+    "width": 1600,
+    "height": 362,
+    "quality": 73,
+    "score": 90.05,
+    "bytes": 27224
+   },
+   {
+    "file": "src/assets/watercolor-edge-flipped.webp",
+    "width": 1600,
+    "height": 362,
+    "quality": 40,
+    "score": 93.74,
+    "bytes": 82218
+   }
+  ]
+ },
+ "watercolor-edge-mobile": {
+  "hash": "165aa14e",
+  "width": 2172,
+  "height": 491,
+  "avif": [
+   [
+    1440,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    1440,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "src/assets/watercolor-edge-mobile.avif",
+    "width": 1440,
+    "height": 491,
+    "quality": 88,
+    "score": 90.41,
+    "bytes": 350121
+   },
+   {
+    "file": "src/assets/watercolor-edge-mobile.webp",
+    "width": 1440,
+    "height": 491,
+    "quality": 60,
+    "score": 92.56,
+    "bytes": 530516
+   }
+  ]
+ },
+ "watercolor-edge-mobile-2x": {
+  "hash": "df6e843b",
+  "width": 2172,
+  "height": 491,
+  "avif": [
+   [
+    1440,
+    "avif"
+   ]
+  ],
+  "fallback": [
+   [
+    1440,
+    "webp"
+   ]
+  ],
+  "files": [
+   {
+    "file": "src/assets/watercolor-edge-mobile-2x.avif",
+    "width": 1440,
+    "height": 290,
+    "quality": 87,
+    "score": 90.42,
+    "bytes": 216177
+   },
+   {
+    "file": "src/assets/watercolor-edge-mobile-2x.webp",
+    "width": 1440,
+    "height": 290,
+    "quality": 40,
+    "score": 90.41,
+    "bytes": 260674
+   }
+  ]
+ },
+ "workshop": {
+  "hash": "586bead9",
+  "width": 1080,
+  "height": 1349,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    1080,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/workshop-586bead9-480.avif",
+    "width": 480,
+    "height": 600,
+    "quality": 86,
+    "score": 90.09,
+    "bytes": 170672
+   },
+   {
+    "file": "public/img/workshop-586bead9-480.jpg",
+    "width": 480,
+    "height": 600,
+    "quality": 96,
+    "score": 90.83,
+    "bytes": 297431
+   },
+   {
+    "file": "public/img/workshop-586bead9-640.avif",
+    "width": 640,
+    "height": 799,
+    "quality": 86,
+    "score": 90.28,
+    "bytes": 285462
+   },
+   {
+    "file": "public/img/workshop-586bead9-800.avif",
+    "width": 800,
+    "height": 999,
+    "quality": 86,
+    "score": 90.22,
+    "bytes": 419419
+   },
+   {
+    "file": "public/img/workshop-586bead9-1080.jpg",
+    "width": 1080,
+    "height": 1349,
+    "quality": "original",
+    "score": 100,
+    "bytes": 450425
+   }
+  ]
+ }
+}

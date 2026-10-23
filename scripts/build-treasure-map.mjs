@@ -167,6 +167,6 @@ add(`<rect x="34" y="30" width="${W - 68}" height="${H - 64}" fill="none" stroke
 add(`</g></svg>`);
 
 const svg = out.join('\n');
-await sharp(Buffer.from(svg), {limitInputPixels: false}).png().toFile('assets/originals/treasure-map.png');
-for (const w of [1200, 2400]) await sharp('assets/originals/treasure-map.png').resize({width: w}).webp({quality: 84}).toFile(`public/assets/treasure-map-${w}.webp`);
+await sharp(Buffer.from(svg), {limitInputPixels: false}).png().toFile('assets/unused/treasure-map.png');
+for (const w of [1200, 2400]) await sharp('assets/unused/treasure-map.png').resize({width: w}).webp({quality: 84}).toFile(`assets/unused/treasure-map-${w}.webp`);
 console.log('treasure map written');
