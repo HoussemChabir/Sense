@@ -471,6 +471,117 @@
    }
   ]
  },
+ "blue-way": {
+  "hash": "3f1646f8",
+  "width": 1600,
+  "height": 1067,
+  "avif": [
+   [
+    480,
+    "avif"
+   ],
+   [
+    640,
+    "avif"
+   ],
+   [
+    800,
+    "avif"
+   ],
+   [
+    1080,
+    "avif"
+   ],
+   [
+    1600,
+    "jpg"
+   ]
+  ],
+  "fallback": [
+   [
+    480,
+    "jpg"
+   ],
+   [
+    640,
+    "jpg"
+   ],
+   [
+    800,
+    "jpg"
+   ],
+   [
+    1600,
+    "jpg"
+   ]
+  ],
+  "files": [
+   {
+    "file": "public/img/blue-way-3f1646f8-480.avif",
+    "width": 480,
+    "height": 320,
+    "quality": 87,
+    "score": 90.69,
+    "bytes": 73945
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-480.jpg",
+    "width": 480,
+    "height": 320,
+    "quality": 96,
+    "score": 90.93,
+    "bytes": 132839
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-640.avif",
+    "width": 640,
+    "height": 427,
+    "quality": 87,
+    "score": 90.53,
+    "bytes": 126513
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-640.jpg",
+    "width": 640,
+    "height": 427,
+    "quality": 96,
+    "score": 90.68,
+    "bytes": 219310
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-800.avif",
+    "width": 800,
+    "height": 534,
+    "quality": 86,
+    "score": 90.18,
+    "bytes": 174175
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-800.jpg",
+    "width": 800,
+    "height": 534,
+    "quality": 96,
+    "score": 90.29,
+    "bytes": 282034
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-1080.avif",
+    "width": 1080,
+    "height": 720,
+    "quality": 87,
+    "score": 90.63,
+    "bytes": 327356
+   },
+   {
+    "file": "public/img/blue-way-3f1646f8-1600.jpg",
+    "width": 1600,
+    "height": 1067,
+    "quality": "original",
+    "score": 100,
+    "bytes": 382563
+   }
+  ]
+ },
  "carpets": {
   "hash": "0cf2eea4",
   "width": 1185,
