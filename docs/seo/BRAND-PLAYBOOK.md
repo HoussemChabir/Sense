@@ -27,15 +27,15 @@ Use these exact words everywhere: Instagram, Google Business Profile, directorie
 ## 2. Launch on Cloudflare
 
 1. **Domain.** Done: `sensetunisia.com` was registered on 31 Oct 2026 at Cloudflare Registrar and expires on 31 Oct 2027. Keep auto-renew on (Domain Registration → Manage domains). Losing the domain would cost the brand everything built on it.
-2. **Pages project.** Go to Workers & Pages → Create → Pages, and connect the GitHub repo `HoussemChabir/Sense`.
-   - Build command: `npm run build`. Output directory: `dist`.
+2. **Worker.** Done: Workers & Pages → Create → Worker, connected to the GitHub repo `HoussemChabir/Sense`.
+   - Build command: `npm run build`. Deploy command: `npx wrangler deploy`, which reads `wrangler.jsonc`; its `name` must match the Worker name in the dashboard.
    - `public/_headers` deploys with the site: security headers, the CSP, and long caching for `/assets/*` and `/img/*`.
 3. **Custom domains.** Add both `www.sensetunisia.com` and `sensetunisia.com` to the project.
 4. **Bare domain to www.** Rules → Redirect Rules → Single Redirect:
    - match `https://sensetunisia.com/*`;
    - redirect to `https://www.sensetunisia.com/${1}` with status 301, and preserve the query string.
-5. **`pages.dev` to www.** Add a Bulk Redirect from `<project>.pages.dev` to `https://www.sensetunisia.com`, with path and query preserved, status 301. This stops Google from finding a duplicate copy of the site. Cloudflare's guide: "Redirecting *.pages.dev to a custom domain".
-6. **Analytics.** In the Pages project, Metrics → enable Web Analytics. It's cookieless, and the CSP already allows its beacon.
+5. **Turn off `workers.dev`.** Once the custom domains work, turn off the `workers.dev` route and Preview URLs under the Worker's Settings → Domains & Routes. This stops Google from finding a duplicate copy of the site.
+6. **Analytics.** In the Worker, Metrics → enable Web Analytics. It's cookieless, and the CSP already allows its beacon.
 7. **Zone settings to check:**
    - **Rocket Loader:** off. It rewrites scripts.
    - **Email Address Obfuscation:** off. It rewrites HTML.
@@ -51,8 +51,8 @@ Use these exact words everywhere: Instagram, Google Business Profile, directorie
 | Command | Expected result |
 |---|---|
 | `curl -I https://sensetunisia.com/` | 301 → `https://www.sensetunisia.com/` |
-| `curl -I https://<project>.pages.dev/` | 301 → www |
-| `curl -I https://www.sensetunisia.com/destinations/sahara` | 308 → `/destinations/sahara/` |
+| `curl -I https://<worker>.<account>.workers.dev/` | 404, no site served there |
+| `curl -I https://www.sensetunisia.com/destinations/sahara` | 307 → `/destinations/sahara/` |
 | `curl -I https://www.sensetunisia.com/nope/` | 404 with the "This path wandered off." page |
 | `curl -I https://www.sensetunisia.com/` | `Content-Security-Policy`, `Strict-Transport-Security`, `X-Frame-Options` present |
 | Search Console → URL Inspection → Test live URL (home page) | Page fetch: Successful. If not, check the crawler access setting above. |

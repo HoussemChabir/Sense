@@ -21,7 +21,7 @@ npm run preview
 - Desktop and mobile layouts, with a separate portrait hero image.
 - Fourteen original generated images, including an alpha-transparent watercolor border.
 - Visually lossless responsive images: AVIF (10-bit, 4:4:4) with a JPEG fallback, served via `<picture>` at widths up to each original, lazy below the fold, and local DM Sans typography (Latin-subset WOFF2).
-- Security headers and immutable caching of content-hashed assets for Cloudflare Pages in `public/_headers`.
+- Security headers and immutable caching of content-hashed assets for Cloudflare Workers in `public/_headers`.
 - Six destination guides on an illustrated regional map, two signature day journeys, and seven experience pages. Each has its own URL as static HTML with:
   - a title, description and canonical link;
   - share tags;
@@ -56,12 +56,9 @@ Only the home page shows the loading screen. It lifts once the hero photo is dec
 
 Each page's head carries inline speculation rules, so Chrome fetches a linked page when the visitor hovers over the link.
 
-The site is hosted on Cloudflare Pages: build command `npm run build`, output directory `dist`. Pages serves each `dist/<path>/index.html` at `/<path>/`, and uses `404.html` for unknown URLs.
+The site is hosted on Cloudflare Workers as static assets, with no Worker code: build command `npm run build`, deploy command `npx wrangler deploy`. `wrangler.jsonc` points Workers at `dist`, which serves each `dist/<path>/index.html` at `/<path>/` and uses `404.html` for unknown URLs.
 
-`https://www.sensetunisia.com` is the one canonical address. Two Cloudflare dashboard rules send other addresses there with a 301:
-
-- one for the bare domain;
-- one for the `*.pages.dev` address.
+`https://www.sensetunisia.com` is the one canonical address. A Cloudflare redirect rule sends the bare domain there with a 301, and the Worker's `*.workers.dev` address is turned off.
 
 `docs/seo/BRAND-PLAYBOOK.md` lists the launch steps.
 
@@ -77,7 +74,7 @@ python -m fontTools.subset assets/fonts/dm-sans-variable.ttf --unicodes="U+0000-
 
 ## Status
 
-Not a live booking service. Trip briefs stay in local browser storage until the visitor sends one to Sense Tunisia on WhatsApp; there is no booking backend, payment collection, or reservation. Page views and Core Web Vitals are measured with Cloudflare Web Analytics, which is cookieless, once it is enabled in the Pages project. The CSP in `public/_headers` already allows its beacon. Photography is generated and illustrative. The working brand, real business information, production imagery, and legal documents can be replaced before launch.
+Not a live booking service. Trip briefs stay in local browser storage until the visitor sends one to Sense Tunisia on WhatsApp; there is no booking backend, payment collection, or reservation. Page views and Core Web Vitals are measured with Cloudflare Web Analytics, which is cookieless, once it is enabled in the Worker. The CSP in `public/_headers` already allows its beacon. Photography is generated and illustrative. The working brand, real business information, production imagery, and legal documents can be replaced before launch.
 
 ## Technical choices
 

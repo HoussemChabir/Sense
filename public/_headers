@@ -1,7 +1,8 @@
-# Cloudflare Pages response headers. Pages already sends X-Content-Type-Options: nosniff and
-# Referrer-Policy: strict-origin-when-cross-origin. The CSP allows the inline speculation rules (src/templates.js) and
-# Cloudflare Web Analytics' beacon; everything else is served from this site.
+# Response headers for Cloudflare Workers static assets, which add none of these by default. The CSP allows the inline
+# speculation rules (src/templates.js) and Cloudflare Web Analytics' beacon; everything else is served from this site.
 /*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
   Content-Security-Policy: default-src 'self'; script-src 'self' 'inline-speculation-rules' https://static.cloudflareinsights.com; style-src 'self'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   Strict-Transport-Security: max-age=63072000; includeSubDomains
   X-Frame-Options: DENY
