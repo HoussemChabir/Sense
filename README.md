@@ -21,11 +21,51 @@ npm run preview
 - Desktop and mobile layouts, with a separate portrait hero image.
 - Fourteen original generated images, including an alpha-transparent watercolor border.
 - Visually lossless responsive images: AVIF (10-bit, 4:4:4) with a JPEG fallback, served via `<picture>` at widths up to each original, lazy below the fold, and local DM Sans typography (Latin-subset WOFF2).
-- Security headers and immutable caching of content-hashed assets for Vercel in `vercel.json`.
-- Six-region discovery map, seven experience details, three sample itineraries, four accommodation concepts, and three journal entries.
+- Security headers and immutable caching of content-hashed assets for Cloudflare Pages in `public/_headers`.
+- Six destination guides on an illustrated regional map, two signature day journeys, and seven experience pages. Each has its own URL as static HTML with:
+  - a title, description and canonical link;
+  - share tags;
+  - schema.org data: the travel agency, trips with their per-person offer and FAQ, destinations, and breadcrumbs.
+- `sitemap.xml` (with images), `llms.txt`, a 404 page, favicons (`favicon.ico` at 16, 32 and 48 px; 192 and 512 px PNGs; an Apple touch icon) and a web manifest. `icon-512.png` doubles as the logo in the structured data.
 - Keyboard-accessible dialogs, mobile navigation, manual story carousel, and reduced-motion support.
-- Trip brief editing, local saving, text download, and deletion.
-- Newsletter preview with explicit local-only behavior and data deletion.
+- Trip brief editing, local saving, text download, deletion, and sending on WhatsApp.
+
+## Pages
+
+The words live in `src/content.js`, including the alt text of every photo (`alts`) and the brand (`brand`): the name Sense Tunisia, the @sensetunisia Instagram and the one-line description. Titles, structured data, the footer, `llms.txt` and the WhatsApp greetings all read from it. The markup lives in `src/templates.js`.
+
+At build time, the `pages` plugin in `vite.config.js` writes every page into `dist/`: `index.html` with the built CSS and JS, plus that page's head tags and markup. It then writes three more files:
+
+- `sitemap.xml`, which lists each page's photos for image search;
+- `llms.txt`, a plain-text map of the site for AI assistants;
+- `404.html`.
+
+The dev server renders the same pages per request.
+
+The build fails on any of these:
+
+- a missing or overlong title or description, or a title without the brand name;
+- a page without exactly one `<h1>`;
+- an image without alt text;
+- the text "undefined" in a page;
+- a link to a page that doesn't exist.
+
+`src/main.js` only adds behaviour. To add a page, add an item to `src/content.js`. Set `index: false` to keep it out of search results and the sitemap until its copy is ready. `related` (journeys, destinations) and `where` (experiences) set the links between pages.
+
+Only the home page shows the loading screen. It lifts once the hero photo is decoded and the font is ready, or 2.5 s after navigation at most. Photos below the fold get their source after the page has loaded, then load as they near the screen.
+
+Each page's head carries inline speculation rules, so Chrome fetches a linked page when the visitor hovers over the link.
+
+The site is hosted on Cloudflare Pages: build command `npm run build`, output directory `dist`. Pages serves each `dist/<path>/index.html` at `/<path>/`, and uses `404.html` for unknown URLs.
+
+`https://www.sensetunisia.com` is the one canonical address. Two Cloudflare dashboard rules send other addresses there with a 301:
+
+- one for the bare domain;
+- one for the `*.pages.dev` address.
+
+`docs/seo/BRAND-PLAYBOOK.md` lists the launch steps.
+
+`docs/seo/` holds the SEO strategy, the audit and the brand playbook behind all of this.
 
 ## Documentation
 
@@ -37,8 +77,8 @@ python -m fontTools.subset assets/fonts/dm-sans-variable.ttf --unicodes="U+0000-
 
 ## Status
 
-This is a complete local frontend concept, not a live booking service. Trip briefs and newsletter emails stay in local browser storage. There is no enquiry/email backend, payment collection, reservation, analytics, or real newsletter submission. Photography is generated and illustrative. The working brand, real business information, production imagery, and legal documents can be replaced before launch.
+Not a live booking service. Trip briefs stay in local browser storage until the visitor sends one to Sense Tunisia on WhatsApp; there is no booking backend, payment collection, or reservation. Page views and Core Web Vitals are measured with Cloudflare Web Analytics, which is cookieless, once it is enabled in the Pages project. The CSP in `public/_headers` already allows its beacon. Photography is generated and illustrative. The working brand, real business information, production imagery, and legal documents can be replaced before launch.
 
 ## Technical choices
 
-Vite with plain JavaScript and CSS; no runtime framework or external UI library. Native dialog, browser validation, and semantic controls keep the site small. Sharp is a development-only asset preparation tool. All fonts and images are served locally.
+Vite with plain JavaScript and CSS; no runtime framework or external UI library. Pages are rendered to static HTML at build time from template strings, so search engines and AI crawlers read the full content without running JavaScript. Native dialog, browser validation, and semantic controls keep the site small. Sharp is a development-only asset preparation tool. All fonts and images are served locally.

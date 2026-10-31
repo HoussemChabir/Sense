@@ -11,6 +11,15 @@
         ],
         "createdAt": "2026-10-21T16:44:20.271Z",
         "reason": "Claude triage: remaining hits are SVG stroke-width transitions (.atlas-connector, .map-dots), a paint property, not layout"
+      },
+      {
+        "rule": "broken-image",
+        "value": "*",
+        "files": [
+          "vite.config.js"
+        ],
+        "createdAt": "2026-10-31T06:49:53.193Z",
+        "reason": "Claude: vite.config.js holds <img regex patterns for build-time SEO checks, not markup"
       }
     ]
   }

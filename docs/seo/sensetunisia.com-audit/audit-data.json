@@ -1,0 +1,107 @@
+{
+  "summary": {
+    "health_score": 69,
+    "audit_date": "2026-10-31",
+    "scope": "Production build served locally (domain not live); 16 pages + 404 crawled; Lighthouse 12.6 mobile on 3 page types; throttled visibility test",
+    "business_type": "Tour operator / travel agency (local service with destination content)",
+    "top_findings": [
+      "Critical: sensetunisia.com does not resolve, so nothing can be indexed",
+      "High: loading screen hides content until every image loads (9.5 s on slow 4G, home); LCP records the loader's own image",
+      "High: home page transfers 3.4 MB of images up front because lazy images are forced eager",
+      "High: almost no trust signals (no About page, licence, address, hosts, reviews; generated photography)",
+      "High: destination pages titled 'Guide' but about 200 words"
+    ],
+    "quick_wins": [
+      "Fix the turquoise duration badge contrast (3.53:1, needs 4.5:1)",
+      "Add 1-2 contextual internal links per page (journeys to /destinations/tunis/, destinations to journeys/experiences)",
+      "Rewrite alt text to describe the photos",
+      "Retitle destination pages away from 'Guide'",
+      "Add a two-level BreadcrumbList to journeys and destinations"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical SEO",
+      "score": 84,
+      "what_works": ["16 static prerendered pages, all 200", "Self-referencing canonicals on 9 indexable pages; noindex,follow on 7 experiences and 404", "robots.txt allows all and lists the sitemap; sitemap = the 9 indexable URLs", "Trailing-slash URLs; 404.html", "CSP, HSTS, X-Frame-Options, nosniff, referrer, permissions and COOP headers", "Build fails on bad titles, descriptions, H1 counts or broken internal links"],
+      "findings": [
+        {"title": "Site not live", "severity": "Critical", "description": "https://sensetunisia.com and https://www.sensetunisia.com do not resolve (31 Oct 2026).", "recommendation": "Deploy, connect the domain, verify in Search Console and Bing, submit the sitemap."},
+        {"title": "Live server behaviour unverified", "severity": "Medium", "description": "Local preview cannot show Vercel's 404 status, trailing-slash redirects, headers or the www/apex rule.", "recommendation": "Check all four after deployment."},
+        {"title": "No www/apex rule in the repo", "severity": "Medium", "description": "Configured in the Vercel dashboard, not in vercel.json.", "recommendation": "Make sensetunisia.com primary and redirect www to it."},
+        {"title": "Analytics scripts 404 until enabled", "severity": "Low", "description": "Two console errors per page; Best Practices 96.", "recommendation": "Enable Vercel Web Analytics and Speed Insights."}
+      ]
+    },
+    {
+      "name": "Content Quality",
+      "score": 48,
+      "what_works": ["Unique titles and descriptions (16/16)", "Journey pages state duration, inclusions and price per person", "Plain, scannable destination copy"],
+      "findings": [
+        {"title": "Almost no trust signals (E-E-A-T)", "severity": "High", "description": "No About page, named hosts, ONTT licence, address, reviews or social profiles; photography is generated.", "recommendation": "About page with people, licence and address; real photos; reviews on Google and Tripadvisor."},
+        {"title": "'Guide' titles on ~200-word destination pages", "severity": "High", "description": "Searches like 'Sidi Bou Said' or 'Tozeur' are answered by long guide articles.", "recommendation": "Retitle for planning intent, or put the depth in journal posts that link back."},
+        {"title": "Very thin experience pages", "severity": "Medium", "description": "47-62 words; contained by noindex.", "recommendation": "Keep noindex until each has about 300+ useful words."},
+        {"title": "Journey pages lack buyer essentials", "severity": "Medium", "description": "No meeting point or pickup, group size, cancellation policy, languages, FAQ or reviews.", "recommendation": "Add once the facts are confirmed."}
+      ]
+    },
+    {
+      "name": "On-Page SEO",
+      "score": 84,
+      "what_works": ["Titles 34-52 characters, unique", "Descriptions 130-158 characters, unique", "One H1 per page, logical heading order", "Descriptive slugs; complete Open Graph and Twitter tags", "Every page one click from home"],
+      "findings": [
+        {"title": "Few links between pages", "severity": "Medium", "description": "Journeys link only to home and the other journey; five of six destinations link only to home and their neighbours.", "recommendation": "Add contextual links per SITE-STRUCTURE.md section 4."},
+        {"title": "Odd WhatsApp message for experiences", "severity": "Low", "description": "'Hi Sense, I'm interested in Culinary.'", "recommendation": "Use 'the Culinary experience' or the subtitle."}
+      ]
+    },
+    {
+      "name": "Schema / Structured Data",
+      "score": 74,
+      "what_works": ["Valid JSON-LD on every page", "TravelAgency site-wide, WebSite on home", "TouristTrip with per-person EUR Offer", "TouristDestination with includesAttraction", "Generated from the same data as the pages"],
+      "findings": [
+        {"title": "Incomplete TravelAgency", "severity": "Medium", "description": "No street address, locality, logo, sameAs, priceRange or contact hours.", "recommendation": "Add them once the business details exist."},
+        {"title": "No BreadcrumbList", "severity": "Medium", "description": "No breadcrumb markup on detail pages.", "recommendation": "Add Home > page now; Home > section > page once hub pages exist."}
+      ]
+    },
+    {
+      "name": "Performance (CWV)",
+      "score": 62,
+      "what_works": ["CLS 0 on every page", "FCP 1.0-1.4 s (Lighthouse mobile)", "Small JavaScript (5.4 kB gzipped)", "Journey page Performance 86"],
+      "findings": [
+        {"title": "Loader hides content until every image loads", "severity": "High", "description": "Throttled (1.6 Mbps, 150 ms, 4x CPU): home content visible at 9.5 s, Sahara at 4.3 s; Chrome's LCP records the loader ring (2.4 s / 1.8 s).", "recommendation": "Lift the loader once the hero image and fonts are ready, or after about 2 s at most."},
+        {"title": "3.4 MB of images on first load (home)", "severity": "High", "description": "27 image requests because lazy images are switched to eager; largest are beach-interlude 599 KiB, souk-medina 444 KiB, carthage 326 KiB.", "recommendation": "Keep native lazy loading below the fold; no change to image quality."},
+        {"title": "Heavy main-thread work on home", "severity": "Medium", "description": "TBT 360 ms; 2.1 s of style and layout at 4x CPU; 472 DOM elements.", "recommendation": "Profile the hidden second atlas SVG and the blur and backdrop filters."},
+        {"title": "Lighthouse image-sizing estimate", "severity": "Low", "description": "About 1.1 MiB, mostly by design (cover-crop sizing, visually lossless quality).", "recommendation": "Keep quality; review sizes for tiles and cards at mobile pixel densities."}
+      ]
+    },
+    {
+      "name": "AI Search Readiness",
+      "score": 64,
+      "what_works": ["Full content in HTML", "AI crawlers allowed", "Short, quotable facts", "Structured data names offers and places"],
+      "findings": [
+        {"title": "Weak signals about the business", "severity": "High", "description": "Generic brand name; no profiles, reviews or mentions on other sites; no About page.", "recommendation": "Create profiles and link them with sameAs; get onto curated 'best tours' lists; use 'Sense Tunisia' consistently."},
+        {"title": "Little to quote for planning questions", "severity": "Medium", "description": "Short pages; no FAQ on the journeys.", "recommendation": "Journal posts with direct answers under each heading; a journey FAQ."},
+        {"title": "No llms.txt", "severity": "Low", "description": "Optional file listing the key pages.", "recommendation": "Add a short file; Google ignores it."}
+      ]
+    },
+    {
+      "name": "Images",
+      "score": 62,
+      "what_works": ["AVIF with JPEG/WebP fallbacks", "Responsive widths", "Width and height on every image", "Lazy loading; high-priority hero"],
+      "findings": [
+        {"title": "No src on deferred images", "severity": "Medium", "description": "10 of 11 images on home and 3 of 4 on each destination keep their URLs in data-src until JavaScript runs.", "recommendation": "Ship the smallest width as src, or rely on native lazy loading."},
+        {"title": "Alt text doesn't describe the photos", "severity": "Medium", "description": "Taglines, page titles and 'destination photograph 1'.", "recommendation": "Add a descriptive alt per image in src/content.js."},
+        {"title": "Generated photography", "severity": "Low", "description": "Per README.", "recommendation": "Replace with real photos, journey pages first."}
+      ]
+    }
+  ],
+  "action_plan": {
+    "phases": [
+      {"name": "Phase 1: Critical Fixes", "timeframe": "Week 1", "items": ["Deploy and connect sensetunisia.com (www redirects to apex)", "Verify 404 status, trailing-slash redirects and headers live", "Search Console and Bing verification; submit sitemap", "Enable Vercel Web Analytics and Speed Insights"]},
+      {"name": "Phase 2: High-Impact Improvements", "timeframe": "Weeks 2-3", "items": ["Lift the loader once the hero and fonts are ready (your call: design choice)", "Stop forcing below-the-fold images to load", "Retitle destination pages away from 'Guide'", "About page, licence, address, real photos (needs business info)", "Journey essentials and FAQ (needs business facts)"]},
+      {"name": "Phase 3: Content & Authority", "timeframe": "Month 2", "items": ["Contextual internal links", "Descriptive alt text", "src on deferred images", "BreadcrumbList", "Google Business Profile and review collection", "Main-thread profiling on home"]},
+      {"name": "Phase 4: Monitoring & Iteration", "timeframe": "Ongoing", "items": ["Monthly Search Console, Speed Insights and AI-answer checks", "Re-audit about four weeks after launch, then quarterly", "Build out experience pages, then re-enable indexing"]}
+    ]
+  },
+  "artifacts": {
+    "findings_dir": "findings/",
+    "screenshots_dir": "screenshots/"
+  }
+}

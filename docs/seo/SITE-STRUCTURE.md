@@ -1,6 +1,6 @@
 # Sense Tunisia: Site Structure
 
-*Domain shown as `sense-tunisia.com` (placeholder). All URLs are lowercase, hyphenated, with a trailing slash.*
+*Domain: `www.sensetunisia.com` (the bare domain redirects to it). All URLs are lowercase, hyphenated, with a trailing slash.*
 
 ## 1. URL hierarchy
 
@@ -36,7 +36,7 @@
 └── /fr/…                             (Phase 3) mirror of the core pages
 ```
 
-Nothing is indexed yet, so better slugs cost no redirects. The arrow shows the old hash route, which a small client-side shim forwards with `location.replace()` so WhatsApp links already shared keep working.
+Nothing is indexed yet, so better slugs cost no redirects. The arrow shows the old hash route. The site never went live with those, so no forwarding shim was needed.
 
 ## 2. Quality gates
 
@@ -53,6 +53,8 @@ A URL ships only when its page passes the gate. Until then, the topic stays a ho
 ## 3. Page metadata
 
 Titles are written to stay under about 60 characters. Descriptions are 140–160 characters and carry a concrete fact.
+
+This table was the starting draft. The shipped values live in `src/content.js` (the `seo` field of each item; the home page's are in `src/templates.js`), and the build fails if a title runs past 65 characters or a description falls outside 50–170.
 
 | URL | Title | H1 | Meta description (draft) |
 |---|---|---|---|
@@ -118,7 +120,7 @@ Rules:
 Generate `sitemap.xml` at build from the same route list that drives prerendering, so a route can never exist without being listed (or the reverse). Include only pages that passed the quality gate and are indexable. Use a `lastmod` taken from the content's last git change, not the build time. Add this line to `public/robots.txt`:
 
 ```
-Sitemap: https://sense-tunisia.com/sitemap.xml
+Sitemap: https://www.sensetunisia.com/sitemap.xml
 ```
 
 In Phase 3, add `xhtml:link` hreflang alternates (`en`, `fr`, `x-default`) to each entry. Keep a single sitemap file until it passes about 1,000 URLs.

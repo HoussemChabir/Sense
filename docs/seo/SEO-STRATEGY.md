@@ -21,9 +21,9 @@ The strategy is therefore **foundation first, then a focused content engine**: t
 | Offer | 2 signature days (Tunis way of life €149, Carthage & Blue €129), 7 experience themes, 6 regions | Day experiences are the main revenue; multi-day tailor-made trips are upsell |
 | Audience | English copy, prices in EUR | English-speaking Europeans (UK, Ireland, Nordics, NL) and North Americans first; **French-speaking market second** |
 | Conversion | WhatsApp +216 27 757 537; the trip planner saves only to the browser | WhatsApp click is the primary conversion; the planner must be connected (see roadmap) |
-| Domain | Not live yet (GitHub repo `HoussemChabir/Sense`, Vercel config present) | `https://sense-tunisia.com` is used as a **placeholder** throughout; swap in the real domain |
+| Domain | Not live yet (GitHub repo `HoussemChabir/Sense`); hosting on Cloudflare Pages | `https://www.sensetunisia.com`, confirmed as the production domain |
 | Budget / capacity | Unknown | ~10–15 hours per week: founder plus one freelance writer, one photo shoot per season |
-| Analytics | None by design (privacy-first) | Keep it cookieless: Search Console + Vercel Web Analytics |
+| Analytics | None by design (privacy-first) | Keep it cookieless: Search Console + Cloudflare Web Analytics |
 
 ### Open questions that change the plan
 
@@ -49,7 +49,7 @@ The strategy is therefore **foundation first, then a focused content engine**: t
 | 10 | No NAP, licence, team or reviews; social links are `#` | `src/main.js:54-59`, footer | High (E-E-A-T) | About page, real profiles, `sameAs` (P1–P2) |
 | 11 | Loader overlay waits for every image on the page, including below the fold | `src/main.js:235-244` | Medium (UX/engagement) | Measure on a slow 4G profile; release the loader once the hero and fonts are ready (P3) |
 | 12 | Single language | `lang="en"` only | Medium | French version of core pages (P3) |
-| 13 | No measurement | README | Medium | Search Console, Bing Webmaster Tools, Vercel Web Analytics and Speed Insights (P1) |
+| 13 | No measurement | README | Medium | Search Console, Bing Webmaster Tools and Cloudflare Web Analytics (P1) |
 
 What is already strong and must be kept: AVIF/JPEG `<picture>` delivery with visually lossless quality (SSIMULACRA2 ≥ 90; performance work must never lower this bar), a preloaded hero with `fetchpriority`, local fonts, a strict CSP and security headers, semantic landmarks, alt text, reduced-motion support, and concrete, citable facts on the journey views (duration, inclusions, starting price).
 
@@ -90,7 +90,7 @@ Travel is not YMYL, but Google's raters and travellers both look for proof that 
 
 ### Hosting and rendering
 
-- Stay on Vercel and Vite. **Prerender every route at build time**: one static HTML file per URL, containing the full page markup, its own `<head>` and its JSON-LD. Plain multi-page navigation is the simplest model. The existing hover/focus image warm-up (`src/main.js:176-181`) keeps transitions feeling instant, and a `Speculation-Rules` response header can prerender likely next pages without inline script, so the CSP stays intact.
+- Host on Cloudflare Pages, built with Vite. **Prerender every route at build time**: one static HTML file per URL, containing the full page markup, its own `<head>` and its JSON-LD. Plain multi-page navigation is the simplest model. The existing hover/focus image warm-up (`src/main.js:176-181`) keeps transitions feeling instant, and a `Speculation-Rules` response header can prerender likely next pages without inline script, so the CSP stays intact.
 - Show the loader only on the first visit of a session. Repeating it on every multi-page navigation would hurt engagement.
 - Keep a tiny shim so old hash links already shared on WhatsApp still work: `#journey/<slug>` → `location.replace('/journeys/<new-slug>/')`.
 
@@ -118,12 +118,12 @@ Sitewide graph (replace the placeholders):
   "@graph": [
     {
       "@type": "TravelAgency",
-      "@id": "https://sense-tunisia.com/#org",
+      "@id": "https://www.sensetunisia.com/#org",
       "name": "Sense Tunisia",
       "alternateName": "Sense",
-      "url": "https://sense-tunisia.com/",
-      "logo": "https://sense-tunisia.com/logo.png",
-      "image": "https://sense-tunisia.com/img/hero-desktop-<hash>-1600.jpg",
+      "url": "https://www.sensetunisia.com/",
+      "logo": "https://www.sensetunisia.com/logo.png",
+      "image": "https://www.sensetunisia.com/img/hero-desktop-<hash>-1600.jpg",
       "telephone": "+216 27 757 537",
       "address": {
         "@type": "PostalAddress",
@@ -137,10 +137,10 @@ Sitewide graph (replace the placeholders):
     },
     {
       "@type": "WebSite",
-      "@id": "https://sense-tunisia.com/#website",
-      "url": "https://sense-tunisia.com/",
+      "@id": "https://www.sensetunisia.com/#website",
+      "url": "https://www.sensetunisia.com/",
       "name": "Sense Tunisia",
-      "publisher": { "@id": "https://sense-tunisia.com/#org" },
+      "publisher": { "@id": "https://www.sensetunisia.com/#org" },
       "inLanguage": "en"
     }
   ]
@@ -153,7 +153,7 @@ Journey page (`/journeys/carthage-sidi-bou-said/`):
 {
   "@context": "https://schema.org",
   "@type": "TouristTrip",
-  "@id": "https://sense-tunisia.com/journeys/carthage-sidi-bou-said/#trip",
+  "@id": "https://www.sensetunisia.com/journeys/carthage-sidi-bou-said/#trip",
   "name": "The Carthage & Blue escape",
   "description": "A private full day from the ruins of Carthage to the blue-and-white village of Sidi Bou Saïd, with a Tunisian lunch, mint tea and a local host.",
   "touristType": ["Cultural tourism", "Couples"],
@@ -166,7 +166,7 @@ Journey page (`/journeys/carthage-sidi-bou-said/`):
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://sense-tunisia.com/journeys/carthage-sidi-bou-said/",
+    "url": "https://www.sensetunisia.com/journeys/carthage-sidi-bou-said/",
     "priceCurrency": "EUR",
     "price": "129",
     "priceSpecification": {
@@ -177,7 +177,7 @@ Journey page (`/journeys/carthage-sidi-bou-said/`):
     },
     "availability": "https://schema.org/InStock"
   },
-  "provider": { "@id": "https://sense-tunisia.com/#org" }
+  "provider": { "@id": "https://www.sensetunisia.com/#org" }
 }
 ```
 
@@ -191,7 +191,7 @@ Generate this JSON from the same data objects that render the page (`journeys`, 
 | INP | ≤ 150 ms (Good threshold is 200 ms) | Little JS; keep it that way |
 | CLS | ≤ 0.05 (Good threshold is 0.1) | Width and height are already set on images |
 
-CrUX will not report field data until traffic is meaningful, so use **Vercel Speed Insights** (served from the same origin at `/_vercel/speed-insights/`, so the CSP is already compatible) as the real-user source.
+CrUX will not report field data until traffic is meaningful, so use **Cloudflare Web Analytics** (its Core Web Vitals report; the CSP in `public/_headers` allows its beacon) as the real-user source.
 
 ### AI search readiness (GEO)
 

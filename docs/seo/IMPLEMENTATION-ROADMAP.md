@@ -17,7 +17,7 @@ Goal: every page that exists is crawlable, unique, measurable and converts.
 | 1.5 | Hash shim: `#journey/…`, `#destination/…`, `#experience/…` → `location.replace(newPath)` | S | 1.4 | Old WhatsApp links land on the right page |
 | 1.6 | Show the loader on the first visit of a session only (`sessionStorage` flag) | S | 1.4 | Navigating between pages shows no loader |
 | 1.7 | `sitemap.xml` generated in the same build step from the same route list; `Sitemap:` line in `public/robots.txt` | S | 1.3 | Sitemap validates and lists only indexable URLs |
-| 1.8 | `vercel.json`: `"trailingSlash": true`, a real `404.html` | S | 1.3 | Unknown URLs return a 404 status, not the homepage |
+| 1.8 | Trailing-slash URLs and a real `404.html` (Cloudflare Pages serves both by default) | S | 1.3 | Unknown URLs return a 404 status, not the homepage |
 | 1.9 | JSON-LD: sitewide `TravelAgency` + `WebSite`; `TouristTrip`, `TouristDestination`, `Service` and `BreadcrumbList` per type (examples in [SEO-STRATEGY.md](SEO-STRATEGY.md) §6), generated from the content data | M | 1.1, NAP | Rich Results Test and the Schema.org validator show 0 errors |
 | 1.10 | Visible breadcrumbs on inner pages | S | 1.3 | Present on every non-home page |
 | 1.11 | Planner sends to WhatsApp: on submit, open `https://wa.me/21627757537?text=<encoded brief>` (keep the local save and download) | S | — | Submitting opens WhatsApp with the brief prefilled |
@@ -29,7 +29,7 @@ Goal: every page that exists is crawlable, unique, measurable and converts.
 | # | Task | Effort | Done when |
 |---|---|---|---|
 | 1.14 | Google Search Console (DNS verification, so no on-page code) and Bing Webmaster Tools; submit the sitemap | S | Both show the sitemap as "Success" |
-| 1.15 | Vercel Web Analytics and Speed Insights. Both load from `/_vercel/…` on the same origin, so the existing CSP needs no change and no cookies are set. Custom events (WhatsApp clicks) need the Vercel Pro plan; on Hobby, rely on the page name in the prefilled WhatsApp text (1.12) and log enquiries by source in the KPI sheet | S | Dashboard shows page views and real-user CWV; enquiries attributable by page |
+| 1.15 | Cloudflare Web Analytics: cookieless, enabled in the Pages project, with its beacon allowed by the CSP in `public/_headers`. It has no custom events, so rely on the page name in the prefilled WhatsApp text (1.12) and log enquiries by source in the KPI sheet | S | Dashboard shows page views and real-user CWV; enquiries attributable by page |
 | 1.16 | Monthly KPI sheet (the table in [SEO-STRATEGY.md](SEO-STRATEGY.md) §8) | S | First baseline row filled in |
 
 ### Content and trust (Content + Founder)
@@ -66,7 +66,7 @@ Goal: every page that exists is crawlable, unique, measurable and converts.
 | 3.3 | Outreach: host 3–5 travel writers who rank for Tunisia itineraries; pitch The Tunisia Guide's "best tours in Tunisia" list | Founder | M | 10+ referring domains |
 | 3.4 | GEO: answer-first passages on all money pages; a monthly 20-prompt check in ChatGPT, Perplexity and Google AI Mode; decide the AI-crawler rules in `robots.txt` | Content | S | Baseline recorded |
 | 3.5 | Performance: profile the first visit on slow 4G. If the loader (which waits for every image, `src/main.js:235-244`) keeps users waiting past ~2.5 s, release it once the hero and fonts are ready. Never lower image quality to gain speed | Dev | S | Speed Insights p75 LCP ≤ 2.0 s |
-| 3.6 | `Speculation-Rules` response header pointing to a JSON file (served as `application/speculationrules+json`, set in `vercel.json`) to prerender likely next pages on hover, with no inline script, so the CSP is unchanged | Dev | S | Instant navigations in Chrome |
+| 3.6 | Inline speculation rules in each page head (allowed by the CSP keyword `inline-speculation-rules`) to prefetch likely next pages on hover | Dev | S | Instant navigations in Chrome |
 | 3.7 | Gated city sub-pages (Sidi Bou Saïd, Carthage) if Search Console shows impressions for them | Content | M | Each passes the 600-word / 60%-unique gate |
 | 3.8 | Shore-excursion page split out from the Carthage journey if that section earns impressions | Content | M | Live |
 
