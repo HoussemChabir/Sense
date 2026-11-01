@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
+    "api": "vite build && npx wrangler dev --port 8787 --ip 127.0.0.1",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1",
     "assets": "node scripts/prepare-assets.mjs"

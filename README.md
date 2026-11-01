@@ -9,6 +9,8 @@ npm install
 npm run dev
 ```
 
+The trip planner sends each brief to `/api/brief` (`worker.js`). To try it locally, run `npm run api` in a second terminal: it starts `wrangler dev` on port 8787, which the dev server forwards `/api` to, and writes to the real `sense` D1 database.
+
 Production build:
 
 ```sh
@@ -20,7 +22,8 @@ npm run preview
 
 - Desktop and mobile layouts, with a separate portrait hero image.
 - Fourteen original generated images, including an alpha-transparent watercolor border.
-- Visually lossless responsive images: AVIF (10-bit, 4:4:4) with a JPEG fallback, served via `<picture>` at widths up to each original, lazy below the fold, and local DM Sans typography (Latin-subset WOFF2).
+- Visually lossless responsive images: AVIF (10-bit, 4:4:4) with a JPEG fallback, served via `<picture>` at widths up to each original, lazy below the fold, and local DM Sans typography (Latin-subset WOFF2), with Manrope for Cyrillic and Readex Pro for Arabic.
+- Seven languages: English at `/`, and French, German, Italian, Polish, Russian and Arabic (right to left) under `/fr/`, `/de/`, `/it/`, `/pl/`, `/ru/` and `/ar/`, with a language menu and hreflang links on every page.
 - Security headers and immutable caching of content-hashed assets for Cloudflare Workers in `public/_headers`.
 - Six destination guides on an illustrated regional map, two signature day journeys, and seven experience pages. Each has its own URL as static HTML with:
   - a title, description and canonical link;
@@ -32,13 +35,13 @@ npm run preview
 
 ## Pages
 
-The words live in `src/content.js`, including the alt text of every photo (`alts`) and the brand (`brand`): the name Sense Tunisia, the @sensetunisia Instagram and the one-line description. Titles, structured data, the footer, `llms.txt` and the WhatsApp greetings all read from it. The markup lives in `src/templates.js`.
+The English words live in `src/content.js`, including the alt text of every photo (`alts`) and the brand (`brand`): the name Sense Tunisia, the @sensetunisia Instagram and the one-line description. Titles, structured data, the footer, `llms.txt` and the WhatsApp greetings all read from it. The interface words (buttons, labels, dialogs, the trip planner) live in `src/i18n/en.js`. The markup lives in `src/templates.js`.
 
-At build time, the `pages` plugin in `vite.config.js` writes every page into `dist/`: `index.html` with the built CSS and JS, plus that page's head tags and markup. It then writes three more files:
+At build time, the `pages` plugin in `vite.config.js` writes every page, in every language, into `dist/`: `index.html` with the built CSS and JS, plus that page's language, head tags and markup. It then writes more files:
 
-- `sitemap.xml`, which lists each page's photos for image search;
-- `llms.txt`, a plain-text map of the site for AI assistants;
-- `404.html`.
+- `sitemap.xml`, which lists each page in each language, with its photos for image search;
+- `llms.txt`, a plain-text map of the English site for AI assistants;
+- `404.html`, and one per language (`fr/404.html`, …) that Workers serves for unknown URLs under that language.
 
 The dev server renders the same pages per request.
 
@@ -48,7 +51,8 @@ The build fails on any of these:
 - a page without exactly one `<h1>`;
 - an image without alt text;
 - the text "undefined" in a page;
-- a link to a page that doesn't exist.
+- a link to a page that doesn't exist;
+- an experience, journey, destination or photo that a language file leaves untranslated.
 
 `src/main.js` only adds behaviour. To add a page, add an item to `src/content.js`. Set `index: false` to keep it out of search results and the sitemap until its copy is ready. `related` (journeys, destinations) and `where` (experiences) set the links between pages.
 
@@ -56,7 +60,17 @@ Only the home page shows the loading screen. It lifts once the hero photo is dec
 
 Each page's head carries inline speculation rules, so Chrome fetches a linked page when the visitor hovers over the link.
 
-The site is hosted on Cloudflare Workers as static assets, with no Worker code: build command `npm run build`, deploy command `npx wrangler deploy`. `wrangler.jsonc` points Workers at `dist`, which serves each `dist/<path>/index.html` at `/<path>/` and uses `404.html` for unknown URLs.
+## Languages
+
+Each language has one file in `src/i18n/`: `fr.js`, `de.js`, `it.js`, `pl.js`, `ru.js` and `ar.js`. A file has the same interface keys as `en.js`, and it translates every item of `src/content.js`, keyed by its slug (experiences, journeys, destinations) or photo name (`alts`). Slugs and paths stay in English, so `/fr/destinations/sahara/` is the French copy of `/destinations/sahara/`, and the language menu links to the same page in every language. To add a language, add its file and list it in `languages` at the top of `src/templates.js`. Its pages then appear at `/<code>/`.
+
+A few interface words are functions, because word order and grammar differ between languages: `explore`, `journeys.of` and `journeys.card`, the eyebrows, and the WhatsApp greetings. Polish and Russian join a name to a label with a colon (`Odkryj: Sahara`) where a sentence would need another grammatical case. The map labels (`atlas.names`) are split into lines by hand, and `atlas.mobile` gives a narrower split for the small map. A label that is too long runs into the map's faded edge.
+
+Arabic pages are right to left (`dir="rtl"`). The stylesheet uses logical properties (`margin-inline-start`, `inset-inline-end`, `text-align: start`) wherever a rule follows the reading direction, so the layout mirrors itself. Arrows flip, letter spacing is off because Arabic letters join, and the logo and email fields stay left to right. The map keeps its geography, and its labels are anchored for right-to-left text.
+
+The translations were drafted from the English copy. Have a native speaker review each language before launch, especially Arabic (Modern Standard Arabic, with the month names used in Tunisia) and Russian.
+
+The site is hosted on Cloudflare Workers as static assets, with `worker.js` for `/api/*` only (trip briefs, kept in the D1 database `sense`; the table is in `migrations/`, applied with `npx wrangler d1 migrations apply sense --remote`): build command `npm run build`, deploy command `npx wrangler deploy`. `wrangler.jsonc` points Workers at `dist`, which serves each `dist/<path>/index.html` at `/<path>/` and uses `404.html` for unknown URLs.
 
 `https://www.sensetunisia.com` is the one canonical address. A Cloudflare redirect rule sends the bare domain there with a 301, and the Worker's `*.workers.dev` address is turned off.
 
@@ -66,11 +80,14 @@ The site is hosted on Cloudflare Workers as static assets, with no Worker code: 
 
 ## Documentation
 
-Read `docs/DESIGN-ANALYSIS.md` for the comprehensive visual analysis and reconstruction specifications. `docs/asset-prompts.json` contains the original image-generation prompt set. Run `npm run assets` to rebuild the responsive images in `public/img/` from `assets/originals/` (plus the beach interlude photo and the atlas illustrations in `assets/atlas/`), and the watercolor edges and mask in `src/assets/`. It needs `ssimulacra2` from the [libjxl releases](https://github.com/libjxl/libjxl/releases) on `PATH` (or `SSIMULACRA2=/path/to/ssimulacra2`): every file is compared with its source at the same size and must score at least 90 ("visually lossless"), and the encoder quality is searched per file for the smallest file that passes. Results go to `assets/image-report.json`, and `src/image-manifest.json` tells the page which widths exist. Unchanged images are skipped, `npm run assets -- carthage` redoes one image, and `npm run assets -- --verify` re-checks every committed file. File names carry a content hash, so they are cached for a year. Source images that the site no longer uses live in `assets/unused/`. The loading screen's watercolour rings are the exception: `node scripts/extract-loader-rings.mjs` cuts them out of `assets/loader-mockup.png` into `src/assets/loader-ring-*` at a fixed AVIF quality 50, since they are only on screen while the page loads. The font is a subset of `assets/fonts/dm-sans-variable.ttf`:
+Read `docs/DESIGN-ANALYSIS.md` for the comprehensive visual analysis and reconstruction specifications. `docs/asset-prompts.json` contains the original image-generation prompt set. Run `npm run assets` to rebuild the responsive images in `public/img/` from `assets/originals/` (plus the beach interlude photo and the atlas illustrations in `assets/atlas/`), and the watercolor edges and mask in `src/assets/`. It needs `ssimulacra2` from the [libjxl releases](https://github.com/libjxl/libjxl/releases) on `PATH` (or `SSIMULACRA2=/path/to/ssimulacra2`): every file is compared with its source at the same size and must score at least 90 ("visually lossless"), and the encoder quality is searched per file for the smallest file that passes. Results go to `assets/image-report.json`, and `src/image-manifest.json` tells the page which widths exist. Unchanged images are skipped, `npm run assets -- carthage` redoes one image, and `npm run assets -- --verify` re-checks every committed file. File names carry a content hash, so they are cached for a year. Source images that the site no longer uses live in `assets/unused/`. The loading screen's watercolour rings are the exception: `node scripts/extract-loader-rings.mjs` cuts them out of `assets/loader-mockup.png` into `src/assets/loader-ring-*` at a fixed AVIF quality 50, since they are only on screen while the page loads. The font is a subset of `assets/fonts/dm-sans-variable.ttf`, with the Polish letters (Latin Extended-A) in a second file that only pages using them download:
 
 ```sh
 python -m fontTools.subset assets/fonts/dm-sans-variable.ttf --unicodes="U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2190-2193,U+2212,U+2215,U+2713,U+FEFF,U+FFFD" --layout-features='*' --flavor=woff2 --output-file=assets/fonts/dm-sans-variable.woff2
+python -m fontTools.subset assets/fonts/dm-sans-variable.ttf --unicodes="U+0100-017F" --layout-features='*' --flavor=woff2 --output-file=assets/fonts/dm-sans-latin-ext.woff2
 ```
+
+DM Sans has no Cyrillic or Arabic. `manrope-cyrillic.woff2` and `readex-pro-arabic.woff2` are the variable `cyrillic` and `arabic` subsets from Fontsource (`@fontsource-variable/manrope` and `@fontsource-variable/readex-pro`, 5.3.0). Their `unicode-range` in `style.css` means only Russian and Arabic pages download them, and those pages preload them. The language names "Русский" and "العربية" use the system font on other pages, so the links to those languages don't pull the fonts in.
 
 ## Status
 

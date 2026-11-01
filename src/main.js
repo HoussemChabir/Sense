@@ -1,8 +1,8 @@
 import { srcset, fullBleedSizes } from './images.js';
-import { whatsapp, brand } from './content.js';
+import { whatsapp } from './content.js';
 
 // Every page arrives as static HTML (src/templates.js); this adds the behaviour.
-const arrow = '<svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>';
+const arrow = '<svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.5"/></svg>';
 const detailPage = document.querySelector('.experience-page');
 const atlasSection = document.querySelector('.atlas-section');
 const plannerForm = document.querySelector('#planner-form');
@@ -14,11 +14,19 @@ const warm = e => {
   document.head.insertAdjacentHTML('beforeend', `<link rel="preload" as="image" type="image/avif" imagesrcset="${srcset(name, 'avif')}" imagesizes="${fullBleedSizes(name)}" data-warm="${name}">`);
 };
 for (const type of ['pointerover', 'focusin', 'touchstart']) document.addEventListener(type, warm, {passive:true});
-// Escape leaves a detail page the way its back link does.
-if (detailPage) document.addEventListener('keydown', e => {if (e.key === 'Escape') location.href = detailPage.querySelector('.exp-back').href;});
+// The language menu closes on a click outside it. Escape closes it, or else leaves a detail page the way its back link does.
+document.addEventListener('click', e => document.querySelectorAll('.lang-menu[open]').forEach(menu => {if (!menu.contains(e.target)) menu.open = false;}));
+document.addEventListener('keydown', e => {
+  if (e.key !== 'Escape') return;
+  const menu = document.querySelector('.lang-menu[open]');
+  if (menu) {menu.open = false; menu.querySelector('summary').focus();}
+  else if (detailPage) location.href = detailPage.querySelector('.exp-back').href;
+});
 
 // The home page: dialog, trip planner, menu and atlas.
 if (plannerForm) {
+  // The words of this page's language, from src/i18n/ (written into the page by src/templates.js).
+  const t = JSON.parse(document.querySelector('#app-words').textContent);
   const dialog = document.querySelector('#detail-dialog');
   const dialogContent = document.querySelector('#dialog-content');
   let previousFocus;
@@ -46,24 +54,30 @@ if (plannerForm) {
   };
   // Detail pages link here as /?interest=<their title>#plan.
   const interest = new URLSearchParams(location.search).get('interest');
-  if (interest) {plannerForm.elements.interests.value = interest; history.replaceState(null, '', `/${location.hash}`);}
+  if (interest) {plannerForm.elements.interests.value = interest; history.replaceState(null, '', location.pathname + location.hash);}
   // After load, as the browser's own jump to #plan resets focus (and replaceState above cancels the jump itself).
   if (location.hash === '#plan') addEventListener('load', () => setTimeout(showPlanner), {once:true});
-  // The brief reaches Sense Tunisia only when the visitor sends it on WhatsApp.
-  const sendLink = brief => `<a class="button" href="${whatsapp}?text=${encodeURIComponent(`Hi ${brand.name}, here is my Tunisia trip brief.\n\n${brief}`)}" target="_blank" rel="noopener noreferrer">Send my brief on WhatsApp ${arrow}</a>`;
-  plannerForm.addEventListener('submit',e=>{
+  // The brief can also go on WhatsApp, to start planning right away or when it could not be sent below.
+  const sendLink = brief => `<a class="button" href="${whatsapp}?text=${encodeURIComponent(`${t.briefIntro}\n\n${brief}`)}" target="_blank" rel="noopener noreferrer">${t.send} ${arrow}</a>`;
+  plannerForm.addEventListener('submit',async e=>{
     e.preventDefault();const values=Object.fromEntries(new FormData(e.target));
-    const brief=`Name: ${values.name}\nEmail: ${values.email}\nMonth: ${values.month||'Flexible'}\nTravelers: ${values.travelers}\n\nInterests:\n${values.interests||'Open to discovery'}`;
-    try{localStorage.setItem('sense-trip-draft',JSON.stringify(values));}catch{openDialog(`<div class="dialog-body"><h2 id="dialog-title">Your browser couldn’t save this brief.</h2><p>Allow local storage and try again, or send the brief to us on WhatsApp now.</p>${sendLink(brief)}</div>`);return;}
-    openDialog(`<div class="dialog-body success-body"><span class="success-icon">✓</span><h2 id="dialog-title">Your Tunisia is taking shape.</h2><p>Your trip brief is saved on this device, ${safe(values.name)}. Send it to us on WhatsApp to start planning together.</p><dl class="brief-summary"><dt>When</dt><dd>${safe(values.month||'Flexible dates')}</dd><dt>Travelers</dt><dd>${safe(values.travelers)}</dd><dt>Your inspiration</dt><dd>${safe(values.interests||'Open to discovery')}</dd></dl>${sendLink(brief)}<button id="download-brief" class="text-link">Download my brief</button><button class="text-link" data-plan>Edit my brief</button><button id="delete-brief" class="quiet-button">Delete saved brief</button></div>`);
-    document.querySelector('#download-brief').onclick=()=>{const blob=new Blob([`SENSE — YOUR TUNISIA TRIP BRIEF\n\n${brief}\n\nThis is a saved planning draft, not a confirmed booking or submitted enquiry.`],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='my-tunisia-trip-brief.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-    document.querySelector('#delete-brief').onclick=()=>{localStorage.removeItem('sense-trip-draft');plannerForm.reset();openDialog('<div class="dialog-body"><h2 id="dialog-title">Your brief has been deleted.</h2><p>The saved trip details have been removed from this browser.</p><button class="button" data-plan>Start a new brief</button></div>');};
+    // The travellers' choice is saved in English; the brief shows it in this page's language.
+    const travelers=plannerForm.elements.travelers.selectedOptions[0]?.text??values.travelers;
+    const brief=`${t.briefName}: ${values.name}\n${t.briefEmail}: ${values.email}\n${t.briefMonth}: ${values.month||t.flexible}\n${t.briefTravelers}: ${travelers}\n\n${t.briefInterests}:\n${values.interests||t.open}`;
+    // worker.js keeps the brief in Cloudflare D1 (not on the Vite dev server, so there it is only saved here).
+    const button=plannerForm.querySelector('[type=submit]');button.disabled=true;
+    const sent=await fetch('/api/brief',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...values,lang:document.documentElement.lang})}).then(r=>r.ok,()=>false);
+    button.disabled=false;
+    try{localStorage.setItem('sense-trip-draft',JSON.stringify(values));}catch{if(!sent){openDialog(`<div class="dialog-body"><h2 id="dialog-title">${t.unsavedTitle}</h2><p>${t.unsavedText}</p>${sendLink(brief)}</div>`);return;}}
+    openDialog(`<div class="dialog-body success-body"><span class="success-icon">✓</span><h2 id="dialog-title">${t.savedTitle}</h2><p>${(sent?t.sentText:t.savedText).replace('{name}', safe(values.name))}</p><dl class="brief-summary"><dt>${t.when}</dt><dd>${safe(values.month||t.flexibleDates)}</dd><dt>${t.travelers}</dt><dd>${safe(travelers)}</dd><dt>${t.inspiration}</dt><dd>${safe(values.interests||t.open)}</dd></dl>${sendLink(brief)}<button id="download-brief" class="text-link">${t.download}</button><button class="text-link" data-plan>${t.edit}</button><button id="delete-brief" class="quiet-button">${t.delete}</button></div>`);
+    document.querySelector('#download-brief').onclick=()=>{const blob=new Blob([`${t.fileTitle}\n\n${brief}\n\n${t.fileNote}`],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=t.fileName;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+    document.querySelector('#delete-brief').onclick=()=>{localStorage.removeItem('sense-trip-draft');plannerForm.reset();openDialog(`<div class="dialog-body"><h2 id="dialog-title">${t.deletedTitle}</h2><p>${t.deletedText}</p><button class="button" data-plan>${t.newBrief}</button></div>`);};
   });
 
   document.addEventListener('click', e=>{if(e.target.closest('[data-plan]')){showPlanner();closeMenu();}});
   const menuToggle=document.querySelector('.menu-toggle');const mobileMenu=document.querySelector('#mobile-menu');
-  function closeMenu(){mobileMenu.hidden=true;menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label','Open menu');document.body.classList.remove('menu-open');}
-  menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';mobileMenu.hidden=!open;menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Close menu':'Open menu');document.body.classList.toggle('menu-open',open);});
+  function closeMenu(){mobileMenu.hidden=true;menuToggle.setAttribute('aria-expanded','false');menuToggle.setAttribute('aria-label',t.openMenu);document.body.classList.remove('menu-open');}
+  menuToggle.addEventListener('click',()=>{const open=menuToggle.getAttribute('aria-expanded')!=='true';mobileMenu.hidden=!open;menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?t.closeMenu:t.openMenu);document.body.classList.toggle('menu-open',open);});
   mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu();});
   const setAtlasRegion=key=>{
@@ -77,7 +91,7 @@ if (plannerForm) {
     el.addEventListener('blur',()=>setAtlasRegion());
   });
   if('IntersectionObserver' in window){new IntersectionObserver(([entry],observer)=>{if(entry.isIntersecting){atlasSection.classList.add('is-visible');observer.disconnect();}},{threshold:.18}).observe(atlasSection);}else atlasSection.classList.add('is-visible');
-  document.querySelector('#privacy-button').onclick=()=>{openDialog(`<div class="dialog-body"><h2 id="dialog-title">Your data stays with you.</h2><p>Your trip brief is saved in local storage on this device. It reaches ${brand.name} only if you choose to send it on WhatsApp, and no reservation is made.</p><p>There are no cookies or advertising trackers: we only measure anonymous page views and loading speed. All photography and fonts are served from this website. You can remove your saved details below.</p><button class="button" id="clear-data">Delete my saved details</button><p id="privacy-status" role="status"></p></div>`);document.querySelector('#clear-data').onclick=()=>{localStorage.removeItem('sense-trip-draft');plannerForm.reset();document.querySelector('#privacy-status').textContent=`All saved ${brand.name} details have been removed from this browser.`;};};
+  document.querySelector('#privacy-button').onclick=()=>{openDialog(`<div class="dialog-body"><h2 id="dialog-title">${t.privacyTitle}</h2>${t.privacyText.map(text=>`<p>${text}</p>`).join('')}<button class="button" id="clear-data">${t.clear}</button><p id="privacy-status" role="status"></p></div>`);document.querySelector('#clear-data').onclick=()=>{localStorage.removeItem('sense-trip-draft');plannerForm.reset();document.querySelector('#privacy-status').textContent=t.cleared;};};
   // Other pages' footers link to /#privacy.
   if(location.hash==='#privacy')document.querySelector('#privacy-button').click();
   const observer=new IntersectionObserver(entries=>{for(const entry of entries){if(entry.isIntersecting){document.querySelectorAll('.desktop-nav a').forEach(a=>a.classList.toggle('active',a.hash===`#${entry.target.id}`));}}},{rootMargin:'-15% 0px -65% 0px'});

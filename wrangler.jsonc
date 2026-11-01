@@ -1,11 +1,19 @@
-// A static site: Workers serves dist/ as assets, with no Worker code. With this file, `wrangler deploy` uploads dist/
-// instead of trying to add Cloudflare's Vite plugin to vite.config.js.
+// Workers serves dist/ as static assets; worker.js runs only for /api/*, keeping trip briefs in D1. With this file,
+// `wrangler deploy` uploads dist/ instead of trying to add Cloudflare's Vite plugin to vite.config.js.
 {
   "name": "sense",
-  "compatibility_date": "2026-10-31",
+  // The newest date the local runtime of `wrangler dev` supports; a later one stops `npm run api`.
+  "compatibility_date": "2026-10-30",
+  "main": "worker.js",
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
     // Each dist/<path>/index.html is served at /<path>/ (the default html_handling); unknown URLs get 404.html.
     "not_found_handling": "404-page"
-  }
+  },
+  // "remote": `wrangler dev` (npm run api) writes to this same Cloudflare database, not a local copy in .wrangler/.
+  "d1_databases": [
+    {"binding": "DB", "database_name": "sense", "database_id": "f7b4295c-25dc-41ec-961c-323175d44b46", "remote": true}
+  ]
 }

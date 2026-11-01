@@ -1,6 +1,9 @@
 Copyright 2014 The DM Sans Project Authors (https://github.com/googlefonts/dm-fonts)
+Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)
+Copyright 2019 The Readex Pro Project Authors (https://github.com/ThomasJockin/readexpro)
 
-This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This Font Software (DM Sans, and Manrope and Readex Pro for Cyrillic and Arabic) is licensed under the SIL Open Font
+License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
 https://scripts.sil.org/OFL
 
