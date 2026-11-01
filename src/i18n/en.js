@@ -14,7 +14,7 @@ export default {
     startPlanning: 'Start planning',
     hero: {title: 'Tunisia, with a local host.', subtitle: 'Private days and tailor-made trips, from the Tunis medina to the Sahara.', button: 'Plan your private journey', scroll: 'Let your curiosity lead', place: 'The Sahara, Tunisia'},
     discover: 'Discover Tunisia',
-    instruction: 'Choose a place. Follow what moves you.',
+    instruction: 'Click on a place. Follow what moves you.',
     atlas: {
       title: 'Interactive map of Tunisia',
       desc: 'Illustrated Tunisia with Algeria to the west, Libya to the southeast, and the Mediterranean along the north and east. Six selectable destinations: Tunis, the Mediterranean coast, Kairouan and El Jem, Tozeur, the Sahara, and Djerba.',
